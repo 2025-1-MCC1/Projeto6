@@ -12,7 +12,7 @@ Vide tutoriais do PI.
 
 # Nome do Projeto
 
-## Nome do Grupo
+## Nebula Lab
 
 ## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Analice Coimbra Carneiro</a>, <a href="https://www.linkedin.com/in/victorbarq/">Harry Zhu</a>, <a href="https://www.linkedin.com/in/victorbarq/">João Pedro Da Silva</a>, <a href="https://www.linkedin.com/in/victorbarq/">Rafaela Florencio Morais</a>
 
