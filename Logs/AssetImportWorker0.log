@@ -15,7 +15,7 @@ C:/Users/jpsil/Documents/GitHub/Projeto6
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52895
+60199
 -job-worker-count
 3
 -background-job-worker-count
@@ -59,12 +59,12 @@ C:/Users/jpsil/Documents/GitHub/Projeto6
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [17672]  Target information:
+Player connection [19132]  Target information:
 
-Player connection [17672]  * "[IP] 192.168.0.68 [Port] 0 [Flags] 2 [Guid] 2835943065 [EditorId] 2835943065 [Version] 1048832 [Id] WindowsEditor(7,Acer-Aspire-5-de-João) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [19132]  * "[IP] 192.168.0.68 [Port] 0 [Flags] 2 [Guid] 1013955795 [EditorId] 1013955795 [Version] 1048832 [Id] WindowsEditor(7,Acer-Aspire-5-de-João) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [17672] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [17672] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [19132] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [19132] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -76,7 +76,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 426.29 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 29.87 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.38f1 (82314a941f2d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.38f1/Editor/Data/Resources/UnitySubsystems
@@ -92,44 +92,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.38f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.38f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.38f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56068
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56048
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.38f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.013517 seconds.
-- Loaded All Assemblies, in  1.910 seconds
+Registered in 0.010788 seconds.
+- Loaded All Assemblies, in  2.313 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.767 seconds
-Domain Reload Profiling: 3666ms
-	BeginReloadAssembly (713ms)
+- Finished resetting the current domain, in  3.736 seconds
+Domain Reload Profiling: 6035ms
+	BeginReloadAssembly (830ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (3ms)
-	RebuildCommonClasses (173ms)
-	RebuildNativeTypeToScriptingClass (55ms)
-	initialDomainReloadingComplete (212ms)
-	LoadAllAssembliesAndSetupDomain (744ms)
-		LoadAssemblies (693ms)
+		CreateAndSetChildDomain (5ms)
+	RebuildCommonClasses (240ms)
+	RebuildNativeTypeToScriptingClass (60ms)
+	initialDomainReloadingComplete (232ms)
+	LoadAllAssembliesAndSetupDomain (935ms)
+		LoadAssemblies (808ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (733ms)
-			TypeCache.Refresh (726ms)
-				TypeCache.ScanAssembly (660ms)
-			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (1769ms)
+		AnalyzeDomain (922ms)
+			TypeCache.Refresh (916ms)
+				TypeCache.ScanAssembly (843ms)
+			BuildScriptInfoCaches (1ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (3738ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1554ms)
+		SetupLoadedEditorAssemblies (3434ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (127ms)
-			SetLoadedEditorAssemblies (20ms)
-			BeforeProcessingInitializeOnLoad (388ms)
-			ProcessInitializeOnLoadAttributes (753ms)
-			ProcessInitializeOnLoadMethodAttributes (265ms)
-			AfterProcessingInitializeOnLoad (1ms)
+			InitializePlatformSupportModulesInManaged (167ms)
+			SetLoadedEditorAssemblies (22ms)
+			BeforeProcessingInitializeOnLoad (1556ms)
+			ProcessInitializeOnLoadAttributes (1067ms)
+			ProcessInitializeOnLoadMethodAttributes (622ms)
+			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
@@ -137,496 +137,734 @@ Domain Reload Profiling: 3666ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  4.257 seconds
-Refreshing native plugins compatible for Editor in 16.61 ms, found 3 plugins.
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in 12.861 seconds
+Refreshing native plugins compatible for Editor in 55.51 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 132.40 ms, found 3 plugins.
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  4.137 seconds
-Domain Reload Profiling: 8369ms
-	BeginReloadAssembly (795ms)
+- Finished resetting the current domain, in  6.361 seconds
+Domain Reload Profiling: 19193ms
+	BeginReloadAssembly (877ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (31ms)
+		DisableScriptedObjects (52ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (105ms)
-	RebuildCommonClasses (215ms)
-	RebuildNativeTypeToScriptingClass (61ms)
-	initialDomainReloadingComplete (186ms)
-	LoadAllAssembliesAndSetupDomain (2973ms)
-		LoadAssemblies (1771ms)
+		CreateAndSetChildDomain (109ms)
+	RebuildCommonClasses (196ms)
+	RebuildNativeTypeToScriptingClass (102ms)
+	initialDomainReloadingComplete (205ms)
+	LoadAllAssembliesAndSetupDomain (11449ms)
+		LoadAssemblies (7079ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1714ms)
-			TypeCache.Refresh (1356ms)
-				TypeCache.ScanAssembly (1033ms)
-			BuildScriptInfoCaches (286ms)
-			ResolveRequiredComponents (56ms)
-	FinalizeReload (4139ms)
+		AnalyzeDomain (4882ms)
+			TypeCache.Refresh (3635ms)
+				TypeCache.ScanAssembly (3408ms)
+			BuildScriptInfoCaches (657ms)
+			ResolveRequiredComponents (577ms)
+	FinalizeReload (6364ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3340ms)
+		SetupLoadedEditorAssemblies (5372ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (21ms)
-			BeforeProcessingInitializeOnLoad (571ms)
-			ProcessInitializeOnLoadAttributes (2195ms)
-			ProcessInitializeOnLoadMethodAttributes (519ms)
-			AfterProcessingInitializeOnLoad (24ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (22ms)
+			BeforeProcessingInitializeOnLoad (721ms)
+			ProcessInitializeOnLoadAttributes (3477ms)
+			ProcessInitializeOnLoadMethodAttributes (1117ms)
+			AfterProcessingInitializeOnLoad (22ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (25ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 4.87 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (26ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 33.02 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 198 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 5937 unused Assets / (4.6 MB). Loaded Objects now: 6624.
-Memory consumption went from 153.6 MB to 149.0 MB.
-Total: 30.768300 ms (FindLiveObjects: 2.900500 ms CreateObjectMapping: 2.535300 ms MarkObjects: 16.520400 ms  DeleteObjects: 8.810300 ms)
+Unloading 201 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7323 unused Assets / (6.9 MB). Loaded Objects now: 7981.
+Memory consumption went from 161.8 MB to 154.9 MB.
+Total: 72.978100 ms (FindLiveObjects: 4.493400 ms CreateObjectMapping: 3.073300 ms MarkObjects: 49.739800 ms  DeleteObjects: 15.666600 ms)
 
 ========================================================================
-Received Import Request.
-  Time since last request: 441319.158338 seconds.
-  path: Assets/InputSystem_Actions.inputactions
-  artifactKey: Guid(052faaac586de48259a63d0c4782560b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/InputSystem_Actions.inputactions using Guid(052faaac586de48259a63d0c4782560b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '02e5b530d5b44d961131ffba578cd945') in 0.0982304 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 20
+Received Prepare
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  5.797 seconds
+Refreshing native plugins compatible for Editor in 18.90 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 20.755 seconds
+Domain Reload Profiling: 26533ms
+	BeginReloadAssembly (1043ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (29ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (189ms)
+	RebuildCommonClasses (209ms)
+	RebuildNativeTypeToScriptingClass (85ms)
+	initialDomainReloadingComplete (224ms)
+	LoadAllAssembliesAndSetupDomain (4216ms)
+		LoadAssemblies (2246ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (2648ms)
+			TypeCache.Refresh (38ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (2513ms)
+			ResolveRequiredComponents (79ms)
+	FinalizeReload (20757ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (15098ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (88ms)
+			SetLoadedEditorAssemblies (574ms)
+			BeforeProcessingInitializeOnLoad (5141ms)
+			ProcessInitializeOnLoadAttributes (8499ms)
+			ProcessInitializeOnLoadMethodAttributes (777ms)
+			AfterProcessingInitializeOnLoad (19ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (50ms)
+Refreshing native plugins compatible for Editor in 36.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 23 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7319 unused Assets / (4.8 MB). Loaded Objects now: 7995.
+Memory consumption went from 145.7 MB to 140.9 MB.
+Total: 38.815700 ms (FindLiveObjects: 3.303000 ms CreateObjectMapping: 2.649500 ms MarkObjects: 26.162900 ms  DeleteObjects: 6.696200 ms)
 
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 26.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7283 unused Assets / (4.9 MB). Loaded Objects now: 7995.
+Memory consumption went from 144.1 MB to 139.2 MB.
+Total: 212.932900 ms (FindLiveObjects: 2.887700 ms CreateObjectMapping: 3.272900 ms MarkObjects: 197.137400 ms  DeleteObjects: 9.631600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Readme.asset
-  artifactKey: Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Readme.asset using Guid(8105016687592461f977c054a80ce2f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '50ea5ad2cda8720781b90d71f311d8d1') in 0.0119088 seconds
+  Time since last request: 108465.913224 seconds.
+  path: Assets/Scripts/AnimationStateController.cs
+  artifactKey: Guid(c7dd928d060051448a262a29a6c6575b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AnimationStateController.cs using Guid(c7dd928d060051448a262a29a6c6575b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e2213553859bbd548106466bf9cb7b57') in 0.2554851 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  6.162 seconds
+Refreshing native plugins compatible for Editor in 21.67 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.121 seconds
+Domain Reload Profiling: 9272ms
+	BeginReloadAssembly (1501ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (95ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (622ms)
+	RebuildCommonClasses (149ms)
+	RebuildNativeTypeToScriptingClass (58ms)
+	initialDomainReloadingComplete (148ms)
+	LoadAllAssembliesAndSetupDomain (4294ms)
+		LoadAssemblies (3604ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1220ms)
+			TypeCache.Refresh (101ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (1047ms)
+			ResolveRequiredComponents (49ms)
+	FinalizeReload (3122ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2404ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (17ms)
+			BeforeProcessingInitializeOnLoad (492ms)
+			ProcessInitializeOnLoadAttributes (1165ms)
+			ProcessInitializeOnLoadMethodAttributes (696ms)
+			AfterProcessingInitializeOnLoad (23ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (46ms)
+Refreshing native plugins compatible for Editor in 19.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7319 unused Assets / (4.8 MB). Loaded Objects now: 7999.
+Memory consumption went from 144.6 MB to 139.8 MB.
+Total: 36.983100 ms (FindLiveObjects: 1.796900 ms CreateObjectMapping: 2.902400 ms MarkObjects: 24.638700 ms  DeleteObjects: 7.640300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.760 seconds
+Refreshing native plugins compatible for Editor in 19.97 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.575 seconds
+Domain Reload Profiling: 7328ms
+	BeginReloadAssembly (582ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (23ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (143ms)
+	RebuildCommonClasses (133ms)
+	RebuildNativeTypeToScriptingClass (47ms)
+	initialDomainReloadingComplete (100ms)
+	LoadAllAssembliesAndSetupDomain (1889ms)
+		LoadAssemblies (1384ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (808ms)
+			TypeCache.Refresh (22ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (733ms)
+			ResolveRequiredComponents (41ms)
+	FinalizeReload (4577ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3832ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (12ms)
+			BeforeProcessingInitializeOnLoad (621ms)
+			ProcessInitializeOnLoadAttributes (2171ms)
+			ProcessInitializeOnLoadMethodAttributes (986ms)
+			AfterProcessingInitializeOnLoad (32ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (65ms)
+Refreshing native plugins compatible for Editor in 28.35 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7319 unused Assets / (5.1 MB). Loaded Objects now: 8001.
+Memory consumption went from 144.6 MB to 139.5 MB.
+Total: 58.676300 ms (FindLiveObjects: 2.589900 ms CreateObjectMapping: 4.063600 ms MarkObjects: 41.083600 ms  DeleteObjects: 10.934700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 103.902130 seconds.
+  path: Assets/Models/Personajes/Characters_03.png
+  artifactKey: Guid(f9f3f05ff7478c1438265e2f4d25f8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personajes/Characters_03.png using Guid(f9f3f05ff7478c1438265e2f4d25f8a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e79b6dfe1ebf0adf3536836444f3e758') in 0.3434359 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
 ========================================================================
 Received Import Request.
-  Time since last request: 267.989632 seconds.
-  path: Assets
-  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c391582d739b6e62a5220f35cbb167ac') in 0.0021693 seconds
+  Time since last request: 6.068213 seconds.
+  path: Assets/Models/Personajes/Materials
+  artifactKey: Guid(f526b3494193cd84498e862bf5633a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personajes/Materials using Guid(f526b3494193cd84498e862bf5633a0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0259b7238d2f33ab3277b588df674048') in 0.001707 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.953660 seconds.
-  path: Assets/Textures
-  artifactKey: Guid(673c76960c3bab4459d081ac728c7235) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures using Guid(673c76960c3bab4459d081ac728c7235) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '05b7ed04782b9979233c872083f61c84') in 0.0018349 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.605138 seconds.
+  path: Assets/Models/Personajes/Materials/Characters_03.mat
+  artifactKey: Guid(a8f75cb8a0cc6fd48ab24bdee5ec1bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Personajes/Materials/Characters_03.mat using Guid(a8f75cb8a0cc6fd48ab24bdee5ec1bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f5af0e80fefbd0474f0f932682813c8') in 1.6354457 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.095151 seconds.
-  path: Assets/Textures/Alfombra1.png
-  artifactKey: Guid(fdecbf480e299ea4294d90624adaebb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Alfombra1.png using Guid(fdecbf480e299ea4294d90624adaebb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fa529aa3e63e930dcaf9c40b88b2e342') in 0.1653528 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 192.237722 seconds.
+  path: Assets/Animations/playerController.controller
+  artifactKey: Guid(6f4cc419966b35643a32767ae32c3d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/playerController.controller using Guid(6f4cc419966b35643a32767ae32c3d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '467e054ad730453048bdca74acb7f51a') in 0.0574036 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Textures/Cue.jpg
-  artifactKey: Guid(17fe4993a98b58241a341eeeb11ba1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Cue.jpg using Guid(17fe4993a98b58241a341eeeb11ba1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f11bafce949983ec43e9407497ba2dea') in 0.0389485 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+Received Prepare
+Refreshing native plugins compatible for Editor in 19.65 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7284 unused Assets / (5.0 MB). Loaded Objects now: 8188.
+Memory consumption went from 158.7 MB to 153.7 MB.
+Total: 127.039900 ms (FindLiveObjects: 4.773400 ms CreateObjectMapping: 2.743700 ms MarkObjects: 112.149700 ms  DeleteObjects: 7.369400 ms)
 
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  5.792 seconds
+Refreshing native plugins compatible for Editor in 36.86 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.213 seconds
+Domain Reload Profiling: 8990ms
+	BeginReloadAssembly (1618ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (127ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (3ms)
+		CreateAndSetChildDomain (640ms)
+	RebuildCommonClasses (176ms)
+	RebuildNativeTypeToScriptingClass (53ms)
+	initialDomainReloadingComplete (141ms)
+	LoadAllAssembliesAndSetupDomain (3789ms)
+		LoadAssemblies (3064ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1349ms)
+			TypeCache.Refresh (96ms)
+				TypeCache.ScanAssembly (3ms)
+			BuildScriptInfoCaches (1158ms)
+			ResolveRequiredComponents (59ms)
+	FinalizeReload (3215ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2490ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (15ms)
+			BeforeProcessingInitializeOnLoad (526ms)
+			ProcessInitializeOnLoadAttributes (1245ms)
+			ProcessInitializeOnLoadMethodAttributes (674ms)
+			AfterProcessingInitializeOnLoad (20ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (46ms)
+Refreshing native plugins compatible for Editor in 25.36 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7319 unused Assets / (5.2 MB). Loaded Objects now: 8069.
+Memory consumption went from 155.1 MB to 149.9 MB.
+Total: 60.557800 ms (FindLiveObjects: 3.406900 ms CreateObjectMapping: 3.385700 ms MarkObjects: 44.756100 ms  DeleteObjects: 9.004200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.546 seconds
+Refreshing native plugins compatible for Editor in 15.95 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.218 seconds
+Domain Reload Profiling: 6755ms
+	BeginReloadAssembly (593ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (28ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (133ms)
+	RebuildCommonClasses (133ms)
+	RebuildNativeTypeToScriptingClass (39ms)
+	initialDomainReloadingComplete (95ms)
+	LoadAllAssembliesAndSetupDomain (1677ms)
+		LoadAssemblies (1301ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (693ms)
+			TypeCache.Refresh (19ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (632ms)
+			ResolveRequiredComponents (34ms)
+	FinalizeReload (4219ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3550ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (14ms)
+			BeforeProcessingInitializeOnLoad (673ms)
+			ProcessInitializeOnLoadAttributes (1989ms)
+			ProcessInitializeOnLoadMethodAttributes (838ms)
+			AfterProcessingInitializeOnLoad (26ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (53ms)
+Refreshing native plugins compatible for Editor in 22.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7319 unused Assets / (4.8 MB). Loaded Objects now: 8071.
+Memory consumption went from 154.9 MB to 150.1 MB.
+Total: 36.106700 ms (FindLiveObjects: 2.016600 ms CreateObjectMapping: 2.967300 ms MarkObjects: 24.943000 ms  DeleteObjects: 6.177300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.599 seconds
+Refreshing native plugins compatible for Editor in 19.93 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.574 seconds
+Domain Reload Profiling: 7164ms
+	BeginReloadAssembly (623ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (22ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (144ms)
+	RebuildCommonClasses (125ms)
+	RebuildNativeTypeToScriptingClass (39ms)
+	initialDomainReloadingComplete (89ms)
+	LoadAllAssembliesAndSetupDomain (1712ms)
+		LoadAssemblies (1322ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (714ms)
+			TypeCache.Refresh (20ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (633ms)
+			ResolveRequiredComponents (50ms)
+	FinalizeReload (4577ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3819ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (14ms)
+			BeforeProcessingInitializeOnLoad (762ms)
+			ProcessInitializeOnLoadAttributes (1953ms)
+			ProcessInitializeOnLoadMethodAttributes (1049ms)
+			AfterProcessingInitializeOnLoad (32ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (67ms)
+Refreshing native plugins compatible for Editor in 15.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7319 unused Assets / (5.1 MB). Loaded Objects now: 8073.
+Memory consumption went from 155.0 MB to 149.9 MB.
+Total: 40.482300 ms (FindLiveObjects: 1.608200 ms CreateObjectMapping: 2.810900 ms MarkObjects: 28.177100 ms  DeleteObjects: 7.883300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Textures/P2.jpg
-  artifactKey: Guid(b2374eebff12139478d925df260b207c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/P2.jpg using Guid(b2374eebff12139478d925df260b207c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dc1babda93f6aad2d4e68b9bbc690f98') in 0.0412471 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 369.185403 seconds.
+  path: Assets/Animations/Breathing Idle.anim
+  artifactKey: Guid(f3845a2713df622469fa06047ab56303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Breathing Idle.anim using Guid(f3845a2713df622469fa06047ab56303) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8948855241e22eef246e28366e4615e6') in 0.3062033 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Textures/Madera1.jpg
-  artifactKey: Guid(c4500dc148ec2384eaf4564e5f1024af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Madera1.jpg using Guid(c4500dc148ec2384eaf4564e5f1024af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e03c0a200a7f812754549a0309a6a7e9') in 0.0386789 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+Received Prepare
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.662 seconds
+Refreshing native plugins compatible for Editor in 18.83 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.142 seconds
+Domain Reload Profiling: 6792ms
+	BeginReloadAssembly (630ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (22ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (160ms)
+	RebuildCommonClasses (109ms)
+	RebuildNativeTypeToScriptingClass (42ms)
+	initialDomainReloadingComplete (99ms)
+	LoadAllAssembliesAndSetupDomain (1769ms)
+		LoadAssemblies (1330ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (764ms)
+			TypeCache.Refresh (21ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (695ms)
+			ResolveRequiredComponents (39ms)
+	FinalizeReload (4144ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3355ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (10ms)
+			SetLoadedEditorAssemblies (16ms)
+			BeforeProcessingInitializeOnLoad (744ms)
+			ProcessInitializeOnLoadAttributes (1678ms)
+			ProcessInitializeOnLoadMethodAttributes (884ms)
+			AfterProcessingInitializeOnLoad (23ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (69ms)
+Refreshing native plugins compatible for Editor in 20.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7319 unused Assets / (5.4 MB). Loaded Objects now: 8075.
+Memory consumption went from 155.0 MB to 149.6 MB.
+Total: 43.367300 ms (FindLiveObjects: 1.927900 ms CreateObjectMapping: 2.804400 ms MarkObjects: 29.351200 ms  DeleteObjects: 9.281900 ms)
 
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 23.24 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7283 unused Assets / (5.2 MB). Loaded Objects now: 8075.
+Memory consumption went from 155.0 MB to 149.8 MB.
+Total: 231.752200 ms (FindLiveObjects: 4.762200 ms CreateObjectMapping: 2.986400 ms MarkObjects: 213.980800 ms  DeleteObjects: 10.017100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  6.910 seconds
+Refreshing native plugins compatible for Editor in 40.12 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.400 seconds
+Domain Reload Profiling: 10291ms
+	BeginReloadAssembly (2665ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (241ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (2ms)
+		CreateAndSetChildDomain (960ms)
+	RebuildCommonClasses (312ms)
+	RebuildNativeTypeToScriptingClass (74ms)
+	initialDomainReloadingComplete (191ms)
+	LoadAllAssembliesAndSetupDomain (3648ms)
+		LoadAssemblies (3456ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1075ms)
+			TypeCache.Refresh (64ms)
+				TypeCache.ScanAssembly (2ms)
+			BuildScriptInfoCaches (882ms)
+			ResolveRequiredComponents (73ms)
+	FinalizeReload (3401ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2345ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (14ms)
+			BeforeProcessingInitializeOnLoad (481ms)
+			ProcessInitializeOnLoadAttributes (1178ms)
+			ProcessInitializeOnLoadMethodAttributes (639ms)
+			AfterProcessingInitializeOnLoad (25ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (56ms)
+Refreshing native plugins compatible for Editor in 18.50 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7319 unused Assets / (5.1 MB). Loaded Objects now: 8077.
+Memory consumption went from 155.0 MB to 149.8 MB.
+Total: 40.549000 ms (FindLiveObjects: 1.978500 ms CreateObjectMapping: 2.960200 ms MarkObjects: 27.730300 ms  DeleteObjects: 7.875200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.743 seconds
+Refreshing native plugins compatible for Editor in 16.05 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.264 seconds
+Domain Reload Profiling: 6000ms
+	BeginReloadAssembly (616ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (22ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (142ms)
+	RebuildCommonClasses (124ms)
+	RebuildNativeTypeToScriptingClass (44ms)
+	initialDomainReloadingComplete (112ms)
+	LoadAllAssembliesAndSetupDomain (1839ms)
+		LoadAssemblies (1425ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (746ms)
+			TypeCache.Refresh (23ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (667ms)
+			ResolveRequiredComponents (44ms)
+	FinalizeReload (3265ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2611ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (14ms)
+			BeforeProcessingInitializeOnLoad (434ms)
+			ProcessInitializeOnLoadAttributes (1225ms)
+			ProcessInitializeOnLoadMethodAttributes (903ms)
+			AfterProcessingInitializeOnLoad (26ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (58ms)
+Refreshing native plugins compatible for Editor in 26.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7319 unused Assets / (4.8 MB). Loaded Objects now: 8079.
+Memory consumption went from 155.0 MB to 150.2 MB.
+Total: 47.272400 ms (FindLiveObjects: 1.955100 ms CreateObjectMapping: 3.322500 ms MarkObjects: 35.408200 ms  DeleteObjects: 6.582400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Textures/Pared.jpg
-  artifactKey: Guid(4662fde9e8a29cf4a8b83f8c477808a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Pared.jpg using Guid(4662fde9e8a29cf4a8b83f8c477808a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77ff614c66f5150d4404e95252d3dc6d') in 0.0364564 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 2118.901584 seconds.
+  path: Assets/Animations/playerController.controller
+  artifactKey: Guid(6f4cc419966b35643a32767ae32c3d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/playerController.controller using Guid(6f4cc419966b35643a32767ae32c3d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e55dc8b88abffbf85996ed183bea25c') in 0.3626397 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Textures/Muro.jpg
-  artifactKey: Guid(b8a8423ba44cd384ba9ce93619ee3c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Muro.jpg using Guid(b8a8423ba44cd384ba9ce93619ee3c39) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3fdd49c0c451cbd9c8141e9db13bf2bf') in 0.0370077 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+Received Prepare
+Refreshing native plugins compatible for Editor in 21.43 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7283 unused Assets / (5.3 MB). Loaded Objects now: 8079.
+Memory consumption went from 155.0 MB to 149.6 MB.
+Total: 169.576100 ms (FindLiveObjects: 4.462700 ms CreateObjectMapping: 2.858900 ms MarkObjects: 152.963400 ms  DeleteObjects: 9.287900 ms)
 
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/Textures/Piso.png
-  artifactKey: Guid(abe71d371266cf643b25cfbb649bccbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Piso.png using Guid(abe71d371266cf643b25cfbb649bccbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'dd109b6eac392eadbfa4295aa00818cf') in 0.0334164 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+Received Prepare
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  7.691 seconds
+Refreshing native plugins compatible for Editor in 20.64 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.126 seconds
+Domain Reload Profiling: 10796ms
+	BeginReloadAssembly (3125ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (150ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (930ms)
+	RebuildCommonClasses (504ms)
+	RebuildNativeTypeToScriptingClass (115ms)
+	initialDomainReloadingComplete (214ms)
+	LoadAllAssembliesAndSetupDomain (3711ms)
+		LoadAssemblies (3606ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1714ms)
+			TypeCache.Refresh (66ms)
+				TypeCache.ScanAssembly (1ms)
+			BuildScriptInfoCaches (1444ms)
+			ResolveRequiredComponents (110ms)
+	FinalizeReload (3127ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2345ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (464ms)
+			ProcessInitializeOnLoadAttributes (1198ms)
+			ProcessInitializeOnLoadMethodAttributes (641ms)
+			AfterProcessingInitializeOnLoad (23ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (44ms)
+Refreshing native plugins compatible for Editor in 15.83 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7319 unused Assets / (5.0 MB). Loaded Objects now: 8081.
+Memory consumption went from 154.9 MB to 149.9 MB.
+Total: 34.207200 ms (FindLiveObjects: 2.467400 ms CreateObjectMapping: 2.557700 ms MarkObjects: 22.942500 ms  DeleteObjects: 6.235100 ms)
 
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Textures/Lavadora.jpg
-  artifactKey: Guid(6fcf072f7b081cc48bd38afcb3560629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Lavadora.jpg using Guid(6fcf072f7b081cc48bd38afcb3560629) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f00a290155e2cfe0c36a17497b226cda') in 0.0366198 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+Received Prepare
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  3.217 seconds
+Refreshing native plugins compatible for Editor in 27.38 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  3.668 seconds
+Domain Reload Profiling: 6872ms
+	BeginReloadAssembly (738ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (22ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (231ms)
+	RebuildCommonClasses (121ms)
+	RebuildNativeTypeToScriptingClass (42ms)
+	initialDomainReloadingComplete (112ms)
+	LoadAllAssembliesAndSetupDomain (2190ms)
+		LoadAssemblies (1682ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (837ms)
+			TypeCache.Refresh (22ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (768ms)
+			ResolveRequiredComponents (36ms)
+	FinalizeReload (3669ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2819ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (13ms)
+			BeforeProcessingInitializeOnLoad (529ms)
+			ProcessInitializeOnLoadAttributes (1444ms)
+			ProcessInitializeOnLoadMethodAttributes (798ms)
+			AfterProcessingInitializeOnLoad (24ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (57ms)
+Refreshing native plugins compatible for Editor in 25.44 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7319 unused Assets / (5.4 MB). Loaded Objects now: 8083.
+Memory consumption went from 155.0 MB to 149.6 MB.
+Total: 44.890400 ms (FindLiveObjects: 2.768500 ms CreateObjectMapping: 3.566300 ms MarkObjects: 29.259100 ms  DeleteObjects: 9.292500 ms)
 
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Textures/Cuar2.jpg.001.jpg
-  artifactKey: Guid(c156a22a02bf86a4880f4916906ca65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Cuar2.jpg.001.jpg using Guid(c156a22a02bf86a4880f4916906ca65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ae20f6d67e6ad688f42301b86c587a66') in 0.0376569 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+Received Prepare
+Begin MonoManager ReloadAssembly
+Duplicate assembly 'log4net.dll' with different versions detected, using 'Packages/com.unity.package-validation-suite/Lib/Editor/log4net.dll, AssemblyName=log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a' and ignoring 'Packages/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll, AssemblyName=log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a'.Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  3.672 seconds
+Refreshing native plugins compatible for Editor in 28.79 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  4.089 seconds
+Domain Reload Profiling: 7748ms
+	BeginReloadAssembly (1059ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (78ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (228ms)
+	RebuildCommonClasses (172ms)
+	RebuildNativeTypeToScriptingClass (78ms)
+	initialDomainReloadingComplete (165ms)
+	LoadAllAssembliesAndSetupDomain (2185ms)
+		LoadAssemblies (1819ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (825ms)
+			TypeCache.Refresh (22ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (736ms)
+			ResolveRequiredComponents (53ms)
+	FinalizeReload (4090ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (3335ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (567ms)
+			ProcessInitializeOnLoadAttributes (1721ms)
+			ProcessInitializeOnLoadMethodAttributes (998ms)
+			AfterProcessingInitializeOnLoad (30ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (69ms)
+Refreshing native plugins compatible for Editor in 26.77 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7319 unused Assets / (5.1 MB). Loaded Objects now: 8085.
+Memory consumption went from 155.0 MB to 149.9 MB.
+Total: 52.075900 ms (FindLiveObjects: 1.597500 ms CreateObjectMapping: 2.614200 ms MarkObjects: 35.950200 ms  DeleteObjects: 11.910900 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Textures/Pared2.jpg
-  artifactKey: Guid(1f9f3e620348d7d4da5d57b4ae693135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Pared2.jpg using Guid(1f9f3e620348d7d4da5d57b4ae693135) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '23c3e7e8ef0d2b88775050e0573ef7a0') in 0.035078 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Textures/Ban.jpg.001.jpg
-  artifactKey: Guid(50c63d49cc7c99e458aed942f3d9cbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Ban.jpg.001.jpg using Guid(50c63d49cc7c99e458aed942f3d9cbdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '52ac5a8f7c5208e466473d0826b0ef61') in 0.0382568 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Textures/Barril.jpg
-  artifactKey: Guid(99294041f334a744b8b134e7edd9da08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Barril.jpg using Guid(99294041f334a744b8b134e7edd9da08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6ef102558331a5bc7b32a739412e7c6d') in 0.0346566 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Textures/Banera.png
-  artifactKey: Guid(6bd325e84e7ea1b44b22711b5bcec51a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Banera.png using Guid(6bd325e84e7ea1b44b22711b5bcec51a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac2533d41e75c37889ffda6f866dfe8c') in 0.0342651 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Textures/Madera4.jpg
-  artifactKey: Guid(a45124cc37345dc40ac6737852662100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Madera4.jpg using Guid(a45124cc37345dc40ac6737852662100) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd816448f3ca2e97dd5481eec8c419191') in 0.0318963 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Textures/Cuar1.jpg
-  artifactKey: Guid(ecfaa4cdef21d4543ac796db6bacb62e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Cuar1.jpg using Guid(ecfaa4cdef21d4543ac796db6bacb62e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '46da2dc815f772e7a06ccb57b290bb92') in 0.0414807 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Textures/Banqueta.jpg
-  artifactKey: Guid(a829dcdb5aa0adf44af2eedc30045f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Banqueta.jpg using Guid(a829dcdb5aa0adf44af2eedc30045f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e9d8f656f1b39e3f223e50814695056b') in 0.0372763 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Textures/Foco.png
-  artifactKey: Guid(9a4ebe0a4541ec246b5eac39d6556815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Foco.png using Guid(9a4ebe0a4541ec246b5eac39d6556815) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '209ebc646e39bf733e202d42de5f3ba7') in 0.0378389 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Textures/Cuar2.jpg
-  artifactKey: Guid(eed22e57db4a32b42bdfcf99b5b8289d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Cuar2.jpg using Guid(eed22e57db4a32b42bdfcf99b5b8289d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '67a46888ca8e6c36d0ac8e2f1ee8f243') in 0.0361729 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Textures/Cables.jpg
-  artifactKey: Guid(c3291b99a58e54041a3c6a5d4503c1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Cables.jpg using Guid(c3291b99a58e54041a3c6a5d4503c1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '69cb3b9f2cb9002355da9da214958083') in 0.0353076 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Textures/Madera6.jpg
-  artifactKey: Guid(f481f64a28459a7419a4998b5a64e8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Madera6.jpg using Guid(f481f64a28459a7419a4998b5a64e8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '041c38daae0a037348f831fc091a4716') in 0.02977 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Textures/Metal4.jpg
-  artifactKey: Guid(de3f2e58e6a34eb4bbfe9d3aecb7b52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Metal4.jpg using Guid(de3f2e58e6a34eb4bbfe9d3aecb7b52d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ac5e7cff85406bff0cb91412dac241d1') in 0.0355522 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Textures/Ladrillos.jpg
-  artifactKey: Guid(129fc1f27e8905047a1ca887728ad10f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Ladrillos.jpg using Guid(129fc1f27e8905047a1ca887728ad10f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9dca4b566bb62ed25ba406d17ac4ce19') in 0.0384126 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Textures/fusil.png
-  artifactKey: Guid(dba0386c6b7a0c24990618d935247164) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/fusil.png using Guid(dba0386c6b7a0c24990618d935247164) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f6f78ac7de8aa44b5dbe15f8e4282411') in 0.0356643 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Textures/Metal1.jpg
-  artifactKey: Guid(5ab052221f3d6de4eb917b782cf6cbe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Metal1.jpg using Guid(5ab052221f3d6de4eb917b782cf6cbe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a424e2e38f1ec201c6d63ec8004e6b31') in 0.0375153 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Textures/Metal2.jpg
-  artifactKey: Guid(4b837be319c70bf43b46c1a69dcf2103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Metal2.jpg using Guid(4b837be319c70bf43b46c1a69dcf2103) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c5fc4a820258b11c1212c62791c0b6bc') in 0.0338941 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.968078 seconds.
-  path: Assets/Materials/Arbol1 3.mat
-  artifactKey: Guid(e922147815de19544948a45dea78c3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Arbol1 3.mat using Guid(e922147815de19544948a45dea78c3ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f349261c7a4a0505dc6516ac097c7b6a') in 12.557587 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000080 seconds.
-  path: Assets/Materials/Metal2.mat
-  artifactKey: Guid(95c0efe35d2eb09478f64918e30b1689) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Metal2.mat using Guid(95c0efe35d2eb09478f64918e30b1689) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'edfec5113c64029175fa2c8acf5e7b30') in 9.7229237 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 257.081008 seconds.
-  path: Assets/Settings/DefaultVolumeProfile.asset
-  artifactKey: Guid(ab09877e2e707104187f6f83e2f62510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/DefaultVolumeProfile.asset using Guid(ab09877e2e707104187f6f83e2f62510) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '10528149371aefc32227726816d72a59') in 0.003661 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000097 seconds.
-  path: Assets/Settings/Mobile_RPAsset.asset
-  artifactKey: Guid(5e6cbd92db86f4b18aec3ed561671858) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/Mobile_RPAsset.asset using Guid(5e6cbd92db86f4b18aec3ed561671858) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8aef1b5780e7730518d46eb0d392eb05') in 0.0078282 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000072 seconds.
-  path: Assets/Settings/SampleSceneProfile.asset
-  artifactKey: Guid(10fc4df2da32a41aaa32d77bc913491c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/SampleSceneProfile.asset using Guid(10fc4df2da32a41aaa32d77bc913491c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b72c935079ba95563e246d02d57d535f') in 0.0027686 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000080 seconds.
-  path: Assets/Settings/PC_RPAsset.asset
-  artifactKey: Guid(4b83569d67af61e458304325a23e5dfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Settings/PC_RPAsset.asset using Guid(4b83569d67af61e458304325a23e5dfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db197cde3899097fb35a5e04db69c105') in 0.0022594 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.834320 seconds.
-  path: Assets/Textures/Piso.png.001.png
-  artifactKey: Guid(3377316ea844eab4daeba08d90acefc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Piso.png.001.png using Guid(3377316ea844eab4daeba08d90acefc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '780a2dd6144f085f2ddafa2e3fd117ee') in 0.0423885 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000063 seconds.
-  path: Assets/Textures/Piso_cocina.jpg
-  artifactKey: Guid(ca1effca9dfe1654d8bf392cb2459339) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Piso_cocina.jpg using Guid(ca1effca9dfe1654d8bf392cb2459339) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a2d28b050c34c672891d0864158eb618') in 0.0407458 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Textures/Telefono.jpg
-  artifactKey: Guid(9ac98e64b2171e84c9b68469fa19d4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Telefono.jpg using Guid(9ac98e64b2171e84c9b68469fa19d4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ef0ae8af458f4bfb72ee59b2340bba6f') in 0.0371367 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Textures/t (28).jpg
-  artifactKey: Guid(8ffba6ee2edc857489030c9e92fa0c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/t (28).jpg using Guid(8ffba6ee2edc857489030c9e92fa0c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bd41a7ac44325748a82769f9691bfe69') in 0.0401772 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Textures/road.jpg
-  artifactKey: Guid(623223db343079b47ae9668807600dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/road.jpg using Guid(623223db343079b47ae9668807600dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9d0bf01fafc90e577cdbb3652fc4112') in 0.0363868 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Textures/telaraÃ±a.png
-  artifactKey: Guid(6ce05a1f201ebef468a82dc3150e0c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/telaraÃ±a.png using Guid(6ce05a1f201ebef468a82dc3150e0c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f031abb96cf24341d7ba9d19583fc44a') in 0.0378581 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Textures/Vidrio.jpg
-  artifactKey: Guid(7e3f53e93e60b7543b92c4897dcdd984) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Vidrio.jpg using Guid(7e3f53e93e60b7543b92c4897dcdd984) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4a03acc9293dfb0e44ae02f30eb92ea5') in 0.0346288 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Textures/Pizarra.jpg
-  artifactKey: Guid(69f121d5fc1166a4bba4be18a96cba64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Pizarra.jpg using Guid(69f121d5fc1166a4bba4be18a96cba64) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6fac85f54cbf695b3bb495b0dffdf8ef') in 0.0314669 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000078 seconds.
-  path: Assets/Textures/Tela5.jpg
-  artifactKey: Guid(797ded3a5dbbfef4880a3b5c24b3d510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tela5.jpg using Guid(797ded3a5dbbfef4880a3b5c24b3d510) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e641fdcecbe04f21330b766117fa1574') in 0.0380405 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Textures/Plastico.jpg
-  artifactKey: Guid(272363056386852438b1fce4f1c408ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Plastico.jpg using Guid(272363056386852438b1fce4f1c408ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a742b74cd34a7c7a9fb140e48eb433e7') in 0.0389853 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Textures/Untitled.001.png
-  artifactKey: Guid(fd98b8bf5724da74e9270a1a5e49b58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Untitled.001.png using Guid(fd98b8bf5724da74e9270a1a5e49b58f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5000b4ddd3cbb1e3f25573a1d9bd4183') in 0.042662 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000065 seconds.
-  path: Assets/Textures/Untitled.002.png
-  artifactKey: Guid(31bcb05264cbff8418ae4572c91deb1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Untitled.002.png using Guid(31bcb05264cbff8418ae4572c91deb1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3791285fdbdfac40a5df5b748e90a6c6') in 0.034045 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Textures/Untitled.005.png
-  artifactKey: Guid(1f881e81c637ebe46ac3633a046415cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Untitled.005.png using Guid(1f881e81c637ebe46ac3633a046415cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf74a7cd3cbcfea32dcdb1544ab3ac61') in 0.0370394 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Textures/Tela2.jpg
-  artifactKey: Guid(f56f5c2d14a7e544aaf12b97eae66cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Tela2.jpg using Guid(f56f5c2d14a7e544aaf12b97eae66cd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '91d2690b41562f020fb684a5a8e23fdb') in 0.037866 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 37.591683 seconds.
-  path: Assets/Materials/Banqueta.mat
-  artifactKey: Guid(56752d7cd72b9c34e8fa4354bf48a32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Banqueta.mat using Guid(56752d7cd72b9c34e8fa4354bf48a32b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e893ee4f188bc6b98b7fc411dca00aea') in 0.0445969 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 133.973456 seconds.
-  path: Assets/Materials/transparentShader.shadergraph
-  artifactKey: Guid(81c567a543886e242baba9d7bae7c27a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/transparentShader.shadergraph using Guid(81c567a543886e242baba9d7bae7c27a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd8fd992a4d8e3ed2b630710925b1a377') in 0.8707496 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
-
-========================================================================
-Received Import Request.
-  Time since last request: 88.438294 seconds.
-  path: Assets/Materials/Planta (5).mat
-  artifactKey: Guid(649c195b4bca0b241821806abe6f434d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Planta (5).mat using Guid(649c195b4bca0b241821806abe6f434d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8abe97089b29390b3c66e7f50ec0a076') in 0.0436402 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 414.199989 seconds.
-  path: Assets/Materials/Tela4.mat
-  artifactKey: Guid(20f64937a19830043b0a60f6a75365c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Tela4.mat using Guid(20f64937a19830043b0a60f6a75365c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e1a9691eda148a85510764bb4709f569') in 0.0589801 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Materials/Vidrio.mat
-  artifactKey: Guid(dbeb83fc44ac1e943ba7fbec6cd7fa4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Vidrio.mat using Guid(dbeb83fc44ac1e943ba7fbec6cd7fa4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2a723cbd0bcab6f5cc05234961d4f3ce') in 8.4086034 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 228.736352 seconds.
-  path: Assets/Scenes/cenaMapaCasa.unity
-  artifactKey: Guid(1edafb5fcc413f34a91f9a7cc98bdaae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/cenaMapaCasa.unity using Guid(1edafb5fcc413f34a91f9a7cc98bdaae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3e2e676ffa9faac7ac7850f18089315b') in 0.0031258 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.620067 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b255d8124e9ff335bebcc3c0527fd2a1') in 0.0019722 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
+Prepare: number of updated asset objects reloaded= 0
