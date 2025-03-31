@@ -10,6 +10,7 @@ namespace StarterAssets
 		[Header("Character Input Values")]
 		public Vector2 move;
 		public Vector2 look;
+		public float lookSense = 2;
 		public bool jump;
 		public bool sprint;
 
@@ -53,7 +54,7 @@ namespace StarterAssets
 
 		public void LookInput(Vector2 newLookDirection)
 		{
-			look = newLookDirection;
+			look = lookSense * newLookDirection;
 		}
 
 		public void JumpInput(bool newJumpState)
