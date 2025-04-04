@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SphereTest : MonoBehaviour
+public class MovSensor : MonoBehaviour
 {
     void OnMouseOver()
     {
         if(PlayerCasting.distanceFromTarget < 1.9f)
         {
-            UIController.actionText = "Pick up Sphere";
+            UIController.actionText = "Pick up Mov. Sensor";
             UIController.commandText = "Pick up";
             UIController.uiActive = true;
         }

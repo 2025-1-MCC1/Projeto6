@@ -14,6 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cenaCasa.unity
     guid: 1edafb5fcc413f34a91f9a7cc98bdaae
+  - enabled: 1
+    path: Assets/Scenes/YouDied.unity
+    guid: efd65d202bf02e94ebc36ec5d363a1eb
+  - enabled: 1
+    path: Assets/Scenes/YouSurvived.unity
+    guid: 0e04d648d687f6648906e8f2cc18b0a4
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
