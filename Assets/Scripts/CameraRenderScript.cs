@@ -1,7 +1,7 @@
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-public class NewMonoBehaviourScript : MonoBehaviour
+public class CameraRenderScript : MonoBehaviour
 {
     // Não estou achando no Inspector o ''Target Texture'' para colocar a render da camera, tentando pelo script:
 

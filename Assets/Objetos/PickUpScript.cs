@@ -6,7 +6,7 @@ public class PickUpScript : MonoBehaviour
 {
     public GameObject player;
     public Transform holdPos;
-    //if you copy from below this point, you are legally required to like the video
+  
     public float throwForce = 500f; //force at which the object is thrown at
     public float pickUpRange = 5f; //how far the player can pickup the object from
     private float rotationSensitivity = 2f; //how fast/slow the object is rotated in relation to mouse movement
@@ -119,26 +119,6 @@ public class PickUpScript : MonoBehaviour
             canDrop = true;
         }
     }
-
-    //void RotateObject()
-    //{
-    //    if (Input.GetKey(KeyCode.R)) // Segurando R para girar o objeto
-    //    {
-    //        canDrop = false;
-    //        playerInputs.cursorInputForLook = false; // Desativa a rotação da câmera
-
-    //        float XaxisRotation = Input.GetAxis("Mouse X") * rotationSensitivity;
-    //        float YaxisRotation = Input.GetAxis("Mouse Y") * rotationSensitivity;
-
-    //        heldObj.transform.Rotate(Vector3.down, XaxisRotation);
-    //        heldObj.transform.Rotate(Vector3.right, YaxisRotation);
-    //    }
-    //    else
-    //    {
-    //        playerInputs.cursorInputForLook = true; // Reativa a rotação da câmera
-    //        canDrop = true;
-    //    }
-    //}
 
     void ThrowObject()
     {
