@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\UIController.cs" />
     <Compile Include="Assets\Asset&apos;s from Asset Store\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
     <Compile Include="Assets\Flashlight\flashlight.cs" />
+    <Compile Include="Assets\Scripts\CameraRenderScript.cs" />
     <Compile Include="Assets\Scripts\MotionDetector.cs" />
     <Compile Include="Assets\Asset&apos;s from Asset Store\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
