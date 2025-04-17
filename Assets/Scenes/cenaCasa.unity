@@ -21,7 +21,11 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_AmbientSkyColor: {r: 0.5, g: 0.4209212, b: 0.2759434, a: 1}
+=======
+  m_AmbientSkyColor: {r: 0.20754719, g: 0.18760468, b: 0.18307228, a: 1}
+>>>>>>> Stashed changes
 =======
   m_AmbientSkyColor: {r: 0.20754719, g: 0.18760468, b: 0.18307228, a: 1}
 >>>>>>> Stashed changes
@@ -3407,6 +3411,7 @@ PrefabInstance:
     - target: {fileID: 7000508687407588386, guid: 5e7c4a1921a045d41a85aea5507aa7b4, type: 3}
       propertyPath: m_LocalPosition.x
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       value: -0.0008
       objectReference: {fileID: 0}
     - target: {fileID: 7000508687407588386, guid: 5e7c4a1921a045d41a85aea5507aa7b4, type: 3}
@@ -3417,6 +3422,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7000508687407588386, guid: 5e7c4a1921a045d41a85aea5507aa7b4, type: 3}
       propertyPath: m_LocalPosition.y
+=======
+      value: -0.0946
+      objectReference: {fileID: 0}
+    - target: {fileID: 7000508687407588386, guid: 5e7c4a1921a045d41a85aea5507aa7b4, type: 3}
+      propertyPath: m_LocalPosition.y
+>>>>>>> Stashed changes
       value: 0.0335
       objectReference: {fileID: 0}
     - target: {fileID: 7000508687407588386, guid: 5e7c4a1921a045d41a85aea5507aa7b4, type: 3}
@@ -3442,6 +3453,9 @@ PrefabInstance:
     - target: {fileID: 7000508687407588386, guid: 5e7c4a1921a045d41a85aea5507aa7b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 105.156
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 7110386558403052219, guid: 5e7c4a1921a045d41a85aea5507aa7b4, type: 3}
@@ -3695,7 +3709,10 @@ PrefabInstance:
     - {fileID: -1678662131863042041, guid: 5e7c4a1921a045d41a85aea5507aa7b4, type: 3}
     m_AddedGameObjects:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     - targetCorrespondingSourceObject: {fileID: 533193074659131909, guid: 5e7c4a1921a045d41a85aea5507aa7b4, type: 3}
       insertIndex: 8
       addedObject: {fileID: 607803169}
@@ -3708,6 +3725,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2755322824129007409, guid: 5e7c4a1921a045d41a85aea5507aa7b4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 554027321}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     - targetCorrespondingSourceObject: {fileID: -1099355487871589541, guid: 5e7c4a1921a045d41a85aea5507aa7b4, type: 3}
       insertIndex: 1
@@ -19522,8 +19542,13 @@ Transform:
   m_GameObject: {fileID: 1220000265}
   serializedVersion: 2
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_LocalRotation: {x: -0.44624004, y: 0.45964304, z: 0.5417656, w: 0.54414}
   m_LocalPosition: {x: 0.010000016, y: -0.015000031, z: 0.17300005}
+=======
+  m_LocalRotation: {x: -0.29523465, y: 0.35127032, z: 0.64712006, w: 0.60883605}
+  m_LocalPosition: {x: 0.00090929924, y: -0.0049231504, z: -0.0007125586}
+>>>>>>> Stashed changes
 =======
   m_LocalRotation: {x: -0.29523465, y: 0.35127032, z: 0.64712006, w: 0.60883605}
   m_LocalPosition: {x: 0.00090929924, y: -0.0049231504, z: -0.0007125586}
@@ -22422,6 +22447,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 3bf5eaaf019184f93888511cab7bc810, type: 3}
   m_PrefabInstance: {fileID: 1458694775}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &1463227794 stripped
 GameObject:
@@ -23659,6 +23687,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 3bf5eaaf019184f93888511cab7bc810, type: 3}
   m_PrefabInstance: {fileID: 1531283189}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 --- !u!1 &1531850338 stripped
 GameObject:
@@ -24639,7 +24670,10 @@ MeshFilter:
   m_GameObject: {fileID: 1575903083}
   m_Mesh: {fileID: -4826929447448276505, guid: 5e7c4a1921a045d41a85aea5507aa7b4, type: 3}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 --- !u!4 &1580354251 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400008, guid: 3bf5eaaf019184f93888511cab7bc810, type: 3}
