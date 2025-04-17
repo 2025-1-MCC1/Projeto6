@@ -2,111 +2,115 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Script que permite ao jogador pegar, soltar, girar e arremessar objetos
 public class PickUpScript : MonoBehaviour
 {
-    public GameObject player;
-    public Transform holdPos;
-  
-    public float throwForce = 500f; //force at which the object is thrown at
-    public float pickUpRange = 5f; //how far the player can pickup the object from
-    private float rotationSensitivity = 2f; //how fast/slow the object is rotated in relation to mouse movement
-    private GameObject heldObj; //object which we pick up
-    private Rigidbody heldObjRb; //rigidbody of object we pick up
-    private bool canDrop = true; //this is needed so we don't throw/drop object when rotating the object
-    private int LayerNumber; //layer index
+    public GameObject player; // Referência ao GameObject do jogador
+    public Transform holdPos; // Posição onde o objeto será segurado
 
-    private StarterAssets.StarterAssetsInputs playerInputs;
+    public float throwForce = 500f; // Força com que o objeto será arremessado
+    public float pickUpRange = 5f; // Distância máxima para pegar um objeto
+    private float rotationSensitivity = 2f; // Sensibilidade da rotação com o mouse
+    private GameObject heldObj; // Objeto atualmente segurado
+    private Rigidbody heldObjRb; // Rigidbody do objeto segurado
+    private bool canDrop = true; // Se o jogador pode soltar/arremessar o objeto no momento
+    private int LayerNumber; // Índice da camada de layer usada quando segurando o objeto
 
-    //Reference to script which includes mouse movement of player (looking around)
-    //we want to disable the player looking around when rotating the object
-    //example below 
-    //MouseLookScript mouseLookScript;
+    private StarterAssets.StarterAssetsInputs playerInputs; // Referência ao sistema de entrada do Starter Assets
+
     void Start()
     {
-        LayerNumber = LayerMask.NameToLayer("holdLayer"); //if your holdLayer is named differently make sure to change this ""
+        // Armazena o número da layer usada para o objeto segurado
+        LayerNumber = LayerMask.NameToLayer("holdLayer");
 
+        // Obtém o componente de entrada do jogador
         playerInputs = player.GetComponent<StarterAssets.StarterAssetsInputs>();
-
-        //mouseLookScript = player.GetComponent<MouseLookScript>();
     }
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E)) //change E to whichever key you want to press to pick up
+        // Pressionar E para pegar ou soltar o objeto
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            if (heldObj == null) //if currently not holding anything
+            if (heldObj == null)
             {
-                //perform raycast to check if player is looking at object within pickuprange
+                // Faz um Raycast para checar se há um objeto na frente para pegar
                 RaycastHit hit;
                 if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, pickUpRange))
                 {
-                    //make sure pickup tag is attached
+                    // Verifica se o objeto tem a tag correta
                     if (hit.transform.gameObject.tag == "canPickUp")
                     {
-                        //pass in object hit into the PickUpObject function
-                        PickUpObject(hit.transform.gameObject);
+                        PickUpObject(hit.transform.gameObject); // Pega o objeto
                     }
                 }
             }
             else
             {
-                if (canDrop == true)
+                if (canDrop)
                 {
-                    StopClipping(); //prevents object from clipping through walls
-                    DropObject();
+                    StopClipping(); // Evita que o objeto clippe com paredes
+                    DropObject();   // Solta o objeto
                 }
             }
         }
-        if (heldObj != null) //if player is holding object
+
+        if (heldObj != null)
         {
-            MoveObject(); //keep object position at holdPos
-            RotateObject();
-            if (Input.GetKeyDown(KeyCode.Mouse0) && canDrop == true) //Mous0 (leftclick) is used to throw, change this if you want another button to be used)
+            MoveObject();   // Mantém o objeto na posição de segurar
+            RotateObject(); // Permite rotacionar o objeto
+
+            // Se o botão esquerdo do mouse for pressionado e puder soltar
+            if (Input.GetKeyDown(KeyCode.Mouse0) && canDrop)
             {
                 StopClipping();
-                ThrowObject();
+                ThrowObject(); // Arremessa o objeto
             }
-
         }
     }
+
+    // Função para pegar o objeto
     void PickUpObject(GameObject pickUpObj)
     {
-        if (pickUpObj.GetComponent<Rigidbody>()) //make sure the object has a RigidBody
+        if (pickUpObj.GetComponent<Rigidbody>())
         {
-            heldObj = pickUpObj; //assign heldObj to the object that was hit by the raycast (no longer == null)
-            heldObjRb = pickUpObj.GetComponent<Rigidbody>(); //assign Rigidbody
-            heldObjRb.isKinematic = true;
-            heldObjRb.transform.parent = holdPos.transform; //parent object to holdposition
-            heldObj.layer = LayerNumber; //change the object layer to the holdLayer
-            //make sure object doesnt collide with player, it can cause weird bugs
-            Physics.IgnoreCollision(heldObj.GetComponent<Collider>(), player.GetComponent<Collider>(), true);
+            heldObj = pickUpObj;
+            heldObjRb = pickUpObj.GetComponent<Rigidbody>();
+            heldObjRb.isKinematic = true; // Desativa física
+            heldObjRb.transform.parent = holdPos.transform; // "Gruda" o objeto na posição de segurar
+            heldObj.layer = LayerNumber; // Coloca na layer de segurar
+            Physics.IgnoreCollision(heldObj.GetComponent<Collider>(), player.GetComponent<Collider>(), true); // Evita colisão com o jogador
         }
     }
+
+    // Função para soltar o objeto
     void DropObject()
     {
-        //re-enable collision with player
-        Physics.IgnoreCollision(heldObj.GetComponent<Collider>(), player.GetComponent<Collider>(), false);
-        heldObj.layer = 0; //object assigned back to default layer
-        heldObjRb.isKinematic = false;
-        heldObj.transform.parent = null; //unparent object
-        heldObj = null; //undefine game object
+        Physics.IgnoreCollision(heldObj.GetComponent<Collider>(), player.GetComponent<Collider>(), false); // Reativa colisão
+        heldObj.layer = 0; // Volta para a layer padrão
+        heldObjRb.isKinematic = false; // Reativa física
+        heldObj.transform.parent = null; // Remove da posição de segurar
+        heldObj = null;
     }
+
+    // Move o objeto junto com a posição de segurar
     void MoveObject()
     {
-        //keep object position the same as the holdPosition position
         heldObj.transform.position = holdPos.transform.position;
     }
 
-
+    // Permite rotacionar o objeto com o mouse ao segurar R
     void RotateObject()
     {
-        if (Input.GetKey(KeyCode.R)) // Segurando R para girar o objeto
+        if (Input.GetKey(KeyCode.R))
         {
-            canDrop = false;
+            canDrop = false; // Não pode soltar enquanto gira
 
-            // Zera o movimento da câmera antes de desativá-lo
+            // Congela o movimento da câmera
             playerInputs.look = Vector2.zero;
             playerInputs.cursorInputForLook = false;
 
+            // Usa o movimento do mouse para rotacionar o objeto
             float XaxisRotation = Input.GetAxis("Mouse X") * rotationSensitivity;
             float YaxisRotation = Input.GetAxis("Mouse Y") * rotationSensitivity;
 
@@ -115,34 +119,36 @@ public class PickUpScript : MonoBehaviour
         }
         else
         {
+            // Reativa controle de câmera e permite soltar
             playerInputs.cursorInputForLook = true;
             canDrop = true;
         }
     }
 
+    // Arremessa o objeto com força
     void ThrowObject()
     {
-        //same as drop function, but add force to object before undefining it
         Physics.IgnoreCollision(heldObj.GetComponent<Collider>(), player.GetComponent<Collider>(), false);
         heldObj.layer = 0;
         heldObjRb.isKinematic = false;
         heldObj.transform.parent = null;
-        heldObjRb.AddForce(transform.forward * throwForce);
+        heldObjRb.AddForce(transform.forward * throwForce); // Aplica força na direção do jogador
         heldObj = null;
     }
-    void StopClipping() //function only called when dropping/throwing
+
+    // Garante que o objeto não clippe com algo quando soltar ou arremessar
+    void StopClipping()
     {
-        var clipRange = Vector3.Distance(heldObj.transform.position, transform.position); //distance from holdPos to the camera
-        //have to use RaycastAll as object blocks raycast in center screen
-        //RaycastAll returns array of all colliders hit within the cliprange
+        var clipRange = Vector3.Distance(heldObj.transform.position, transform.position);
+
+        // Usa RaycastAll para verificar todos os objetos entre a câmera e o objeto segurado
         RaycastHit[] hits;
         hits = Physics.RaycastAll(transform.position, transform.TransformDirection(Vector3.forward), clipRange);
-        //if the array length is greater than 1, meaning it has hit more than just the object we are carrying
+
         if (hits.Length > 1)
         {
-            //change object position to camera position 
-            heldObj.transform.position = transform.position + new Vector3(0f, -0.5f, 0f); //offset slightly downward to stop object dropping above player 
-            //if your player is small, change the -0.5f to a smaller number (in magnitude) ie: -0.1f
+            // Reposiciona o objeto mais perto do jogador, com um leve deslocamento para baixo
+            heldObj.transform.position = transform.position + new Vector3(0f, -0.5f, 0f);
         }
     }
 }
