@@ -22,8 +22,11 @@
 </p>
 
 
+<p>
+  O jogo There is a Monster in the Window é um projeto interdisciplinar desenvolvido por alunos do curso de Ciência da Computação da FECAP. Combinando áreas como programação, lógica, matemática aplicada e design de jogos, o projeto busca não apenas proporcionar uma experiência envolvente de terror, mas também explorar, de forma criativa, os conceitos de casas e cidades inteligentes. A proposta central é fazer o jogador sobreviver das 20:00 até as 6:00 da manhã utilizando recursos tecnológicos — como sensores de movimento e câmeras de vigilância — para detectar e evitar uma entidade misteriosa que ronda os cômodos da casa.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius, massa vel tempus rhoncus, mauris arcu sagittis nunc, at interdum purus dui et ex. Morbi pellentesque sodales metus at egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat consectetur metus id tempor. Vestibulum elementum enim ut elit laoreet commodo ut a tellus. Fusce porta lacus turpis, id cursus lorem ornare in. Suspendisse eu sem vel diam viverra viverra vel at sapien. In hac habitasse platea dictumst. Sed in lacus ex. Etiam vel urna purus. Mauris et justo erat. Integer condimentum ac erat sed sagittis. Duis a diam sed justo condimentum vestibulum. Aliquam a purus sollicitudin, sollicitudin dui ut, eleifend sem. Morbi lorem mi, ornare nec pulvinar eu, ultrices non odio.
+  A ambientação do jogo se inspira na estética dos clássicos de PS1, com visual retrô e atmosfera opressiva. O jogo transforma um ambiente inteligente em um campo de tensão constante, onde o jogador precisa tomar decisões estratégicas sobre onde posicionar seus dispositivos de vigilância. Ao aplicar conceitos reais de automação residencial, detecção por proximidade, gerenciamento de recursos limitados e sistemas temporais dinâmicos, o jogo representa uma fusão entre entretenimento e tecnologia aplicada, convidando o jogador a pensar sobre o papel da tecnologia em ambientes residenciais modernos.
+</p>
 
 ## 🛠 Estrutura de pastas
 
@@ -45,9 +48,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius, massa 
 │       └── entrega Projeto Interdisciplinar: Jogos Digitais
 │
 ├── There is a Monster in the Window
-│   ├── windows
-│   ├── android
-│   └── HTML
+│   ├── Assets
+│   ├── Packages
+│   ├── ProjectSettings
+│   ├── .gitignore
+│   └── .vsconfig
 |
 └── readme.md
 </pre>
