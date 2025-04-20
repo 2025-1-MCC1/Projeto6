@@ -13,7 +13,7 @@
 ## Descrição
 
 <p align="center">
-  <img src="https://sdmntprwestus.oaiusercontent.com/files/00000000-f048-5230-8294-f522196507cf/raw?se=2025-04-17T16%3A00%3A27Z&sp=r&sv=2024-08-04&sr=b&scid=61b95047-58a0-51ff-bb0c-7361ac559263&skoid=0abefe37-d2bd-4fcb-bc88-32bccbef6f7d&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-16T21%3A44%3A46Z&ske=2025-04-17T21%3A44%3A46Z&sks=b&skv=2024-08-04&sig=J6CfBvcs25a4mSVu%2B63FGL6P%2Bpyj46zFgz4TWa%2BCjZQ%3D" 
+  <img src="Capa do jogo.png" 
        alt="There is a Monster in the Window" 
        border="5" 
        width="400">
