@@ -96,17 +96,13 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 
 ## 💻 Configuração para Desenvolvimento
 
-Descreva como instalar todas as dependências para desenvolvimento e como rodar um test-suite automatizado de algum tipo. Se necessário, faça isso para múltiplas plataformas.
+É necessário ter a Unity versão 6000.0.38f1
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://godotengine.org/download">GODOT</a>
+-<a href="https://unity.com/releases/editor/whats-new/6000.0.38#notes">GODOT</a>
 
-```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
-```
+
 
 ## 📋 Licença/License
 There is a Monster in the Window © 2025 by Analice Coimbra Carneiro, Harry Zhu, João Pedro da Silva, Rafaela Florêncio Morais is licensed under Creative Commons Attribution 4.0 International.
@@ -116,6 +112,9 @@ There is a Monster in the Window © 2025 by Analice Coimbra Carneiro, Harry Zhu,
 Aqui estão as referências usadas no projeto.
 
 1. <https://elbolilloduro.itch.io/>
-2. <https://chooser-beta.creativecommons.org/>
-3. <https://freesound.org/>
+2. <https://elbolilloduro.itch.io/abandoned-house/>
+3. <https://elbolilloduro.itch.io/objetos-low-poly-estilo-psx/>
+4. <https://elbolilloduro.itch.io/exploration-objects/>
+5. <https://chooser-beta.creativecommons.org/>
+6. <https://freesound.org/>
 
