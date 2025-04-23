@@ -41,7 +41,7 @@ public class BarradeSanidade : MonoBehaviour
                 mudancaSanidade -= 15;
 
             if (!monstroNaJanela && !janelaVazia && !ouvindoBarulhos && !semLuz)
-                mudancaSanidade += 10; // se nenhum dos fatores acima estiver presente, ele recupera a sanidade
+                mudancaSanidade += 10  ; // se nenhum dos fatores acima estiver presente, ele recupera a sanidade
 
             AtualizarSanidade(mudancaSanidade);
         }
