@@ -109,7 +109,7 @@ Coloque código do prompt de comnando se for necessário
 ```
 
 ## 📋 Licença/License
-Utilize o link <https://chooser-beta.creativecommons.org/> para fazer uma licença CC BY 4.0.
+There is a Monster in the Window © 2025 by Analice Coimbra Carneiro, Harry Zhu, João Pedro da Silva, Rafaela Florêncio Morais is licensed under Creative Commons Attribution 4.0 International.
 
 ## 🎓 Referências
 
