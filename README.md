@@ -100,7 +100,7 @@ Encontre o index.html na pasta executáveis e execute-o como uma página WEB (at
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://unity.com/releases/editor/whats-new/6000.0.38#notes">GODOT</a>
+-<a href="https://unity.com/releases/editor/whats-new/6000.0.38#notes">UNITY</a>
 
 
 
