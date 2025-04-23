@@ -115,7 +115,7 @@ There is a Monster in the Window © 2025 by Analice Coimbra Carneiro, Harry Zhu,
 
 Aqui estão as referências usadas no projeto.
 
-1. [<https://github.com/iuricode/readme-template>](https://elbolilloduro.itch.io/)
+1. <https://elbolilloduro.itch.io/>
 2. <https://chooser-beta.creativecommons.org/>
 3. <https://freesound.org/>
 
