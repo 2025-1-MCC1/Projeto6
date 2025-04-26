@@ -39,7 +39,7 @@
 │   │   ├── entrega Algoritmos e Lógica de Programação
 │   │   ├── entrega Ética e Pensamento Computacional
 │   │   ├── entrega Jogos Digitais e Sistemas Digitais Interativos
-│   │   └── entrega Projeto Interdisciplinar: Jogos Digitais
+│   │   └── entrega Projeto Interdisciplinar: Jogos Digitais - Jogo Executável
 │   └── entrega 2
 │       ├── entrega Cálculo 1
 │       ├── entrega Algoritmos e Lógica de Programação
