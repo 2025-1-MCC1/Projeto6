@@ -97,7 +97,10 @@ namespace StarterAssets
 
 		private void Start()
 		{
-			_controller = GetComponent<CharacterController>();
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
+            _controller = GetComponent<CharacterController>();
 			_input = GetComponent<StarterAssetsInputs>();
 #if ENABLE_INPUT_SYSTEM
 			_playerInput = GetComponent<PlayerInput>();

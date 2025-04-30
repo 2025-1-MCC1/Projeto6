@@ -10,7 +10,7 @@ public class PickUpScript : MonoBehaviour
 
     public float throwForce = 500f; // Força com que o objeto será arremessado
     public float pickUpRange = 5f; // Distância máxima para pegar um objeto
-    private float rotationSensitivity = 2f; // Sensibilidade da rotação com o mouse
+    private float rotationSensitivity = 5f; // Sensibilidade da rotação com o mouse
     private GameObject heldObj; // Objeto atualmente segurado
     private Rigidbody heldObjRb; // Rigidbody do objeto segurado
     private bool canDrop = true; // Se o jogador pode soltar/arremessar o objeto no momento

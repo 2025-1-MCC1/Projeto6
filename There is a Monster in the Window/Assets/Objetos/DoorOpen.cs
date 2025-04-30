@@ -28,6 +28,7 @@ public class DoorOpen : MonoBehaviour
          if (other.gameObject.CompareTag("Player"))
         {
             colliding = true;
+            UIController.actionText = "Open Door";
             UIController.commandText = "Open";
             UIController.uiActive = true;
         }
@@ -43,7 +44,7 @@ public class DoorOpen : MonoBehaviour
                 //Debug.Log("Porta fechou");
             }
             interactUI.SetActive(false);
-            UIController.uiActive = true;
+            UIController.uiActive = false;
             UIController.commandText = "";
             colliding = false;
         }
