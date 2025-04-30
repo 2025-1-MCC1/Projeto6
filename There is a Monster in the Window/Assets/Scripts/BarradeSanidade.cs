@@ -1,66 +1,134 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using System.Threading;
+using static UnityEngine.Rendering.DebugUI;
 
-public class BarradeSanidade : MonoBehaviour
+public class BarraDeSanidade : MonoBehaviour
 {
-    // sistema de sanidade
-    public int sanidade = 50;
-    public int sanidadeMaxima = 100;
-    public int sanidadeMinima = 0;
-    public Slider barraSanidade;
+    private float health;
+    private float lerpTimer;// contador de tempo 
+    public float maxHealth = 100f; //máximo de sanidade do jogador
+    public float chipSpeed = 2f; // define quanto tempo (em segundos) deve demorar para completar a transição da barra
+    public Image frontHealthBar;
+    public Image backHealthBar;
+    public TextMeshProUGUI healthText;
 
-    //fatores
-    public bool estaDentroDaCasa = false;
-    public bool monstroNaJanela = false;
-    public bool janelaVazia = false;
-    public bool ouvindoBarulhos = false;
-    public bool semLuz = false;
+    // fatores da sanidade
+    public float monstroJanela = 20f;
+    public float barulhos = 6f;
+    public float faltaDeLuz = 15f;
+    public float ganhoSanidade = 10f;
+
+    // controle dos fatores que alteram a sanidade
+    private bool dentroDaCasa = false;
+    private float tempoVerificacao = 1f;
+    private float tempoAtual = 0f;
+
+    // Referências aos objetos do jogo
+    public GameObject Criaturas;
+    public GameObject[] Ventanas; // janelas da casa
+    //public Light luzAmbiente; // a luz principal do ambiente, ainda nao feito
+    //public float intensidadeMinima = 0.2f; // abaixo disso considera "escuro"
+    //public bool somTocado = false; //ao escutar passos, barulho diminui a sanidade. colocar dps
 
     void Start()
     {
-        barraSanidade.maxValue = sanidadeMaxima;
-        barraSanidade.value = sanidade;
+        health = 30f; //inicia o jogo com 30 de sanidade por estar na rua
     }
+
 
     void Update()
     {
-        if (estaDentroDaCasa)
+        health = Mathf.Clamp(health, 0, maxHealth); // sanidade inicial, mínima e máxima 
+        UpdateHealthUI();
+
+        if (dentroDaCasa)
         {
-            int mudancaSanidade = 0;
-
-            if (monstroNaJanela)
-                mudancaSanidade -= 20;
-
-            if (janelaVazia)
-                mudancaSanidade -= 12;
-
-            if (ouvindoBarulhos)
-                mudancaSanidade -= 6;
-
-            if (semLuz)
-                mudancaSanidade -= 15;
-
-            if (!monstroNaJanela && !janelaVazia && !ouvindoBarulhos && !semLuz)
-                mudancaSanidade += 10  ; // se nenhum dos fatores acima estiver presente, ele recupera a sanidade
-
-            AtualizarSanidade(mudancaSanidade);
+            tempoAtual += Time.deltaTime;
+            if (tempoAtual >= tempoVerificacao)
+            {
+                VerificarFatores();
+                tempoAtual = 0f;
+            }
         }
     }
-
-    void AtualizarSanidade(int quantidade) // fica entre 0 e 100
+    void VerificarFatores()
     {
-        sanidade += quantidade;
-        sanidade = Mathf.Clamp(sanidade, 0, sanidadeMaxima);
-        barraSanidade.value = sanidade;
+        bool algoAfetando = false;
+
+        // Monstro na janela
+        if (Criaturas.activeInHierarchy && EstaNaJanela(Criaturas.transform.position))
+        {
+            Debug.Log("Monstro está na janela: ");
+            TakeDamage(monstroJanela);
+            algoAfetando = true;
+        }
+
+        /* barulho
+        if (somTocado)
+        {
+            TakeDamage(barulhos);
+            somTocado = false; // reseta para não repetir até novo som
+            algoAfetando = true;
+        }*/
+
+        /* falta de luz
+        if (luzAmbiente != null && luzAmbiente.intensity < intensidadeMinima)
+        {
+            TakeDamage(faltaDeLuz);
+            algoAfetando = true;
+        }*/
+        if (!algoAfetando)
+        {
+            RestoreHealth(ganhoSanidade);
+        }
+
+    } 
+        bool EstaNaJanela(Vector3 posicaoCriaturas)
+        {
+            foreach (GameObject Ventanas in Ventanas)
+            {
+                if (Vector3.Distance(Ventanas.transform.position, posicaoCriaturas) < 2f) // ajusta o raio
+                    return true;
+            }
+            return false;
+        }
+    
+
+    public void EntrarNaCasa(bool status)
+    {
+        dentroDaCasa = status;
+        if (status)
+            health = 50f;
     }
 
-    public void EntrarNaCasa()
+
+
+
+    public void UpdateHealthUI()
     {
-        estaDentroDaCasa = true;
+        Debug.Log("Sanidade atual: " + health);
+
+        float hFraction = health / maxHealth;
+        frontHealthBar.fillAmount = hFraction;
+        backHealthBar.fillAmount = hFraction;
+
+
+        
+
+
     }
 
-    public void SairDaCasa()
+    public void TakeDamage(float damage) // dano na sanidade do jogador 
     {
-        estaDentroDaCasa = false;
+        Debug.Log("Perdeu Sanidade: " + damage);
+        health -= damage; // afeta a sanidade
+        lerpTimer = 0f;
     }
-}
+    public void RestoreHealth(float healAmount) // para restaurar a sanidade 
+    {
+        health += healAmount;
+        lerpTimer = 0f;
+    }
+  }
