@@ -13,7 +13,7 @@
 ## Descrição
 
 <p align="center">
-  <img src="Capa do jogo.png" 
+  <img src="imagens/Capa do jogo.png" 
        alt="There is a Monster in the Window" 
        border="5" 
        width="400">
