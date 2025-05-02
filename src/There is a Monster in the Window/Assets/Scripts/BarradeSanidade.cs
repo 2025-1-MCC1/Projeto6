@@ -108,7 +108,7 @@ public class BarraDeSanidade : MonoBehaviour
 
     public void UpdateHealthUI()
     {
-        Debug.Log("Sanidade atual: " + health);
+        //Debug.Log("Sanidade atual: " + health);
 
         float hFraction = health / maxHealth;
         frontHealthBar.fillAmount = hFraction;
