@@ -9,7 +9,7 @@ public class PowerEnergy : MonoBehaviour
     private bool geradorQuebrado = false; //essa variável serve para sabermos que o gerador JÁ QUEBROU, para não desligar as luzes toda hora
 
     public Transform Jogador; //lugar do player na cena, serve para ver se o jogador está perto do fusivel
-    public float distanciaParaSegurar = 0.5f; //distancia necessária para o jogador estar do fusivel
+    public float distanciaParaSegurar = 1.5f; //distancia necessária para o jogador estar do fusivel
 
     void Start()
     {
