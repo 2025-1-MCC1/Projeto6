@@ -8,6 +8,6 @@ public class Menu : MonoBehaviour
     public void StartGame()
     {
         // Carrega a cena de índice 1 (definido na build settings do Unity)
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Lore");
     }
 }
