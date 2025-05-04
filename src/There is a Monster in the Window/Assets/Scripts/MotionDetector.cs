@@ -13,7 +13,7 @@ public class MotionDetector : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         // Verifica se o objeto que entrou na área tem a tag "Player"
-        if (other.CompareTag("Player")) // Pode ser trocado por "Intruder" se necessário
+        if (other.CompareTag("Monster")) // Pode ser trocado por "Intruder" se necessário
         {
             Debug.Log("Movimento detectado!");
 
@@ -31,7 +31,7 @@ public class MotionDetector : MonoBehaviour
     void OnTriggerExit(Collider other)
     {
         // Verifica se o objeto que saiu da área tem a tag "Player"
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Monster"))
         {
             Debug.Log("Área limpa.");
 
