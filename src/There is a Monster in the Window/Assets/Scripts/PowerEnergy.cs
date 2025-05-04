@@ -5,7 +5,7 @@ public class PowerEnergy : MonoBehaviour
     public float vidaGerador = 90f; //vida do gerador, acaba em 90 seg da vida real (1min e meio)
     public float tempoSegurando = 0f; //quantos segundos o jogador ESTÁ segurando a tecla, aumenta essa variável 
     public float tempoParaReparo = 10f; //tempo em segundos que o jogador deve segurar a tecla E para valer 
-    GameObject[] Focos; //ARRAY para guardar QUAIS são os objetos que tem a tag que especifiquei (lights) 
+    GameObject[] precisaLuz; //ARRAY para guardar QUAIS são os objetos que tem a tag que especifiquei (lights), dentro disso fica as luzes, as cameras de segurança e os sensores 
     private bool geradorQuebrado = false; //essa variável serve para sabermos que o gerador JÁ QUEBROU, para não desligar as luzes toda hora
 
     public Transform Jogador; //lugar do player na cena, serve para ver se o jogador está perto do fusivel
@@ -14,7 +14,7 @@ public class PowerEnergy : MonoBehaviour
     void Start()
     {
         //Para capturar todas as luzes que existem na casa e guardar em um Vector
-        Focos = GameObject.FindGameObjectsWithTag("Light"); //coloca todos os objetos que tiverem a tag light dentro do array de Focos, guardando eles
+        precisaLuz = GameObject.FindGameObjectsWithTag("Light"); //coloca todos os objetos que tiverem a tag light dentro do array de Focos, guardando eles
 
     }
 
@@ -72,7 +72,7 @@ public class PowerEnergy : MonoBehaviour
 
     void DesligarLuzes() //pega todos os objetos do array de focos e desliga
     {
-        foreach (GameObject foco in Focos)
+        foreach (GameObject foco in precisaLuz)
         {
             Light componente = foco.GetComponentInChildren<Light>();
             if (componente != null)
@@ -80,11 +80,12 @@ public class PowerEnergy : MonoBehaviour
                 componente.enabled = false;
             }
         }
+        
     }
 
     void LigarLuzes() //void de ligar luzes usando foreach game object set active, com os objetos do array de focos
     {
-        foreach (GameObject foco in Focos)
+        foreach (GameObject foco in precisaLuz)
         {
             Light componente = foco.GetComponentInChildren<Light>();
             if (componente != null)
@@ -92,7 +93,6 @@ public class PowerEnergy : MonoBehaviour
                 componente.enabled = true;
             }
         }
-
     }
 
     void ConsertarGerador() //void de consertar
