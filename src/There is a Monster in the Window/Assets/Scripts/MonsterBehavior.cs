@@ -67,6 +67,7 @@ public class MonsterBehavior : MonoBehaviour
         int index = Random.Range(0, destinations.Length);
         Transform chosenDest = destinations[index];
         transform.position = chosenDest.position;
+        transform.rotation = chosenDest.rotation;
         LookAtTarget();
 
     }
