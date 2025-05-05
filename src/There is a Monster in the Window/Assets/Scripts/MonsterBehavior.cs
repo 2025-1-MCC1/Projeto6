@@ -4,15 +4,12 @@ using System.Collections;
 
 public class MonsterBehavior : MonoBehaviour
 {
-    public Transform dest1, dest2, dest3;
+    public Transform dest1, dest2, dest3, dest4;
     private Transform[] destinations;
 
     public ItemSwitcher itemSwitcher;
 
     public Transform player;
-
-    public Transform lookCenter;
-
 
     public float timeDelay = 10f;
 
@@ -25,7 +22,7 @@ public class MonsterBehavior : MonoBehaviour
     {
         
         transform.position = hideLocation;
-        destinations = new Transform[] { dest1, dest2, dest3 };
+        destinations = new Transform[] { dest1, dest2, dest3, dest4 };
         
         StartCoroutine(DelayMonsterSpawn());
         
@@ -68,14 +65,11 @@ public class MonsterBehavior : MonoBehaviour
         Transform chosenDest = destinations[index];
         transform.position = chosenDest.position;
         transform.rotation = chosenDest.rotation;
-        LookAtTarget();
+        
 
     }
 
-    void LookAtTarget()
-    {
-        transform.LookAt(lookCenter);
-    }
+  
 
 }
 
