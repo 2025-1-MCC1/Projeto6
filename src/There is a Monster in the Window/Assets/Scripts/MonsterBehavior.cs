@@ -9,6 +9,7 @@ public class MonsterBehavior : MonoBehaviour
 
     public ItemSwitcher itemSwitcher;
 
+
     public Transform player;
 
     public float timeDelay = 10f;
@@ -41,13 +42,16 @@ public class MonsterBehavior : MonoBehaviour
         IsActive();
 
         yield return new WaitUntil(() => itemSwitcher.activeItem == 1  && Vector3.Distance(transform.position, player.position) < detectionDistance);
-        UIController.actionText = "Activate spiritbox";
-        UIController.commandText = "Activate";
+        
         UIController.uiActive = true;
+        UIController.actionText = "Activate spiritbox";
+        UIController.commandText = "[F] Activate";
+        
 
        
-        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.E));
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.F));
         UIController.uiActive = false;
+        
         ReturnHiding();
 
 

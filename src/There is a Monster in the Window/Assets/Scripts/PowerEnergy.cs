@@ -43,6 +43,7 @@ public class PowerEnergy : MonoBehaviour
 
         if (geradorQuebrado && distancia <= distanciaParaSegurar)
         {
+            
             if (Input.GetKey(KeyCode.E))
             {
 
@@ -54,6 +55,7 @@ public class PowerEnergy : MonoBehaviour
                     Debug.Log(">> CHAMANDO REPARO AGORA");
                     ConsertarGerador(); //chama o void de consertar o gerador SOMENTE se a tecla E foi pressionada por 10 segundos
                     tempoSegurando = 0f; // reseta após conserto
+                    
 
                 }
             }

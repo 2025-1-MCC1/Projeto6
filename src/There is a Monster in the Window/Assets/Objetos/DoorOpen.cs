@@ -29,7 +29,7 @@ public class DoorOpen : MonoBehaviour
         {
             colliding = true;
             UIController.actionText = "Open Door";
-            UIController.commandText = "Open";
+            UIController.commandText = "[E] Open";
             UIController.uiActive = true;
         }
     }

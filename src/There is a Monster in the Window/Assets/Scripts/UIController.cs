@@ -27,7 +27,7 @@ public class UIController : MonoBehaviour
 
             // Atualiza os textos nas caixas com os valores definidos
             actionBox.GetComponent<TMPro.TMP_Text>().text = actionText;
-            commandBox.GetComponent<TMPro.TMP_Text>().text = "[E] " + commandText;
+            commandBox.GetComponent<TMPro.TMP_Text>().text = commandText;
         }
         else
         {
