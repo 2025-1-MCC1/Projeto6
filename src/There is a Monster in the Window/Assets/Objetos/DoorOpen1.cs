@@ -23,7 +23,7 @@ public class DoorOpen1 : MonoBehaviour
             //Debug.Log("Porta abriu");
         }
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
          if (other.gameObject.CompareTag("Player"))
         {

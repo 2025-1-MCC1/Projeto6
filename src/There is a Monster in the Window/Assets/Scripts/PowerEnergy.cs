@@ -6,7 +6,7 @@ public class PowerEnergy : MonoBehaviour
     public float tempoSegurando = 0f; //quantos segundos o jogador ESTÁ segurando a tecla, aumenta essa variável 
     public float tempoParaReparo = 10f; //tempo em segundos que o jogador deve segurar a tecla E para valer 
     GameObject[] precisaLuz; //ARRAY para guardar QUAIS são os objetos que tem a tag que especifiquei (lights), dentro disso fica as luzes, as cameras de segurança e os sensores 
-    private bool geradorQuebrado = false; //essa variável serve para sabermos que o gerador JÁ QUEBROU, para não desligar as luzes toda hora
+    public bool geradorQuebrado = false; //essa variável serve para sabermos que o gerador JÁ QUEBROU, para não desligar as luzes toda hora
 
     public Transform Jogador; //lugar do player na cena, serve para ver se o jogador está perto do fusivel
     public float distanciaParaSegurar = 1.5f; //distancia necessária para o jogador estar do fusivel

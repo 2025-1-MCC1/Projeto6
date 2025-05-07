@@ -1,35 +1,37 @@
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class DoorOpen : MonoBehaviour
+public class PickMonitor : MonoBehaviour
 {
     public GameObject interactUI;
-    public Animator animator;
     private bool colliding;
-    private bool doorOpen = false;
+    public GameObject monitorMao;
+    public GameObject telaMonitor;
 
     void Start()
     {
         interactUI.SetActive(false);
+        monitorMao.SetActive(false);
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && colliding)
         {
-            doorOpen = true;
-            animator.SetTrigger("Open");
             interactUI.SetActive(true);
-            //Debug.Log("Porta abriu");
+            Destroy(gameObject);
+            interactUI.SetActive(false);
+            UIController.uiActive = false;
+            UIController.commandText = "";
+            monitorMao.SetActive(true);
         }
     }
     private void OnTriggerStay(Collider other)
     {
-         if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
             colliding = true;
-            UIController.actionText = "Open Door";
-            UIController.commandText = "[E] Open";
+            UIController.actionText = "Pick Up Monitor";
+            UIController.commandText = "[E] Pick Up";
             UIController.uiActive = true;
         }
     }
@@ -37,18 +39,11 @@ public class DoorOpen : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (doorOpen)
-            {
-                animator.SetTrigger("Close");
-               
-                //Debug.Log("Porta fechou");
-            }
             interactUI.SetActive(false);
             UIController.uiActive = false;
             UIController.commandText = "";
             colliding = false;
         }
     }
-}   
 
-
+}

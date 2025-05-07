@@ -1,7 +1,7 @@
 using UnityEngine;
 
 // Script para um sensor de movimento que detecta quando o jogador entra ou sai de uma área
-public class MotionDetector : MonoBehaviour
+public class MotionDetectorCameras : MonoBehaviour
 {
     public bool spotted = false;
 
@@ -39,7 +39,7 @@ public class MotionDetector : MonoBehaviour
         {
             Debug.Log("Área limpa.");
 
-            spotted = true;
+            spotted = false;
 
             // Muda a cor da luz de volta para verde (normalidade)
             if (spotLight != null)
