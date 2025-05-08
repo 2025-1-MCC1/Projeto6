@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PowerEnergy : MonoBehaviour
@@ -10,6 +11,8 @@ public class PowerEnergy : MonoBehaviour
 
     public Transform Jogador; //lugar do player na cena, serve para ver se o jogador está perto do fusivel
     public float distanciaParaSegurar = 1.5f; //distancia necessária para o jogador estar do fusivel
+
+    private Dictionary<Camera, RenderTexture> cameraTextures = new Dictionary<Camera, RenderTexture>(); //dicionario para guardar o valor das cameras e a render texture delas
 
     void Start()
     {
@@ -72,8 +75,10 @@ public class PowerEnergy : MonoBehaviour
         
     }
 
-    void DesligarLuzes() //pega todos os objetos do array de focos e desliga
+    void DesligarLuzes() //pega todos os objetos do array de precisaLuz e desliga, tambem pega a renderer da camera
     {
+
+
         foreach (GameObject foco in precisaLuz)
         {
             Light componente = foco.GetComponentInChildren<Light>();
@@ -81,9 +86,41 @@ public class PowerEnergy : MonoBehaviour
             {
                 componente.enabled = false;
             }
+
+
+            Camera camera = foco.GetComponentInChildren<Camera>();
+            if (camera != null)
+            {
+                RenderTexture rt = camera.targetTexture;
+
+                if (rt != null)
+                {
+                    if (!cameraTextures.ContainsKey(camera))
+                    {
+                        cameraTextures.Add(camera, rt); // salva a RenderTexture original
+                    }
+
+
+                    LimparRenderTexture(rt); //  Limpa o conteúdo da tela do monitor
+                    camera.targetTexture = null;
+                }
+
+                camera.enabled = false;
+                
+            }
         }
-        
     }
+    void LimparRenderTexture(RenderTexture renderTexture)
+    {
+        RenderTexture ativa = RenderTexture.active;
+        RenderTexture.active = renderTexture;
+        GL.Clear(true, true, Color.black);
+        RenderTexture.active = ativa;
+      
+    }
+
+
+   
 
     void LigarLuzes() //void de ligar luzes usando foreach game object set active, com os objetos do array de focos
     {
@@ -94,7 +131,20 @@ public class PowerEnergy : MonoBehaviour
             {
                 componente.enabled = true;
             }
+            Camera camera = foco.GetComponentInChildren<Camera>();
+            if (camera != null)
+            {
+                camera.enabled = true;
+                if (cameraTextures.ContainsKey(camera))
+                {
+                    camera.targetTexture = cameraTextures[camera]; // restaurar a render texture
+                }
+
+            }
+
         }
+       
+
     }
 
     void ConsertarGerador() //void de consertar
