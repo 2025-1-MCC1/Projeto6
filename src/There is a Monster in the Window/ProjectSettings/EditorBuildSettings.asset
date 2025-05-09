@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Lore.unity
     guid: aea8f26b41f958f43ad437f00328eba3
   - enabled: 1
+    path: Assets/Scenes/LoreDois.unity
+    guid: 14fe7f9db54a0d043b5115306b1b6b34
+  - enabled: 1
     path: Assets/Scenes/cenaCasa.unity
     guid: 1edafb5fcc413f34a91f9a7cc98bdaae
   - enabled: 1

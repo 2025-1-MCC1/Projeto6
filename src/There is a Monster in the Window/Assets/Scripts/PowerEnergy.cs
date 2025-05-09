@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class PowerEnergy : MonoBehaviour
@@ -106,7 +107,25 @@ public class PowerEnergy : MonoBehaviour
                 }
 
                 camera.enabled = false;
-                
+            }
+        }
+
+        GameObject[] sensoresMovimento = new GameObject[] //cria um array com todos os sensores que tem nomes diferentes e outra tag que nao posso modificar ("Pickup")
+         {
+             GameObject.Find("MovSensor"),
+             GameObject.Find("MovSensor2"),
+             GameObject.Find("MovSensor3"),
+         };
+
+        foreach (GameObject sensor in sensoresMovimento)
+        {
+            if (sensor != null)
+            {
+                var sensorScript = sensor.GetComponentInChildren<MotionDetector>();
+                if (sensorScript != null)
+                {
+                    sensorScript.enabled = false; //desliga o script do sensor de movimento
+                }
             }
         }
     }
@@ -116,7 +135,6 @@ public class PowerEnergy : MonoBehaviour
         RenderTexture.active = renderTexture;
         GL.Clear(true, true, Color.black);
         RenderTexture.active = ativa;
-      
     }
 
 
@@ -139,12 +157,26 @@ public class PowerEnergy : MonoBehaviour
                 {
                     camera.targetTexture = cameraTextures[camera]; // restaurar a render texture
                 }
-
             }
-
         }
-       
+        GameObject[] sensoresMovimento = new GameObject[] //cria um array com todos os sensores que tem nomes diferentes e outra tag que nao posso modificar ("Pickup")
+          {
+             GameObject.Find("MovSensor"),
+             GameObject.Find("MovSensor2"),
+             GameObject.Find("MovSensor3"),
+          };
 
+        foreach (GameObject sensor in sensoresMovimento)
+        {
+            if (sensor != null)
+            {
+                var sensorScript = sensor.GetComponentInChildren<MotionDetector>();
+                if (sensorScript != null)
+                {
+                    sensorScript.enabled = true; //liga o script do sensor de movimento
+                }
+            }
+        }
     }
 
     void ConsertarGerador() //void de consertar
