@@ -45,7 +45,7 @@ public class PowerEnergy : MonoBehaviour
 
     private void OnMouseOver()
     {
-        float distancia = Vector3.Distance(Jogador.position, transform.position); //para calcular a distancia que o player est� do gerador, ver depois o raycast!!!
+        float distancia = Vector3.Distance(Jogador.position, transform.position); //para calcular a distancia que o player está do gerador
         if (geradorQuebrado && distancia <= distanciaParaSegurar)
         {
             UIController.actionText = "Hold 10 Seconds";
@@ -66,12 +66,12 @@ public class PowerEnergy : MonoBehaviour
                     UIController.uiActive = false;
                     Debug.Log(">> CHAMANDO REPARO AGORA");
                     ConsertarGerador(); //chama o void de consertar o gerador SOMENTE se a tecla E foi pressionada por 10 segundos
-                    tempoSegurando = 0f; // reseta ap�s conserto
+                    tempoSegurando = 0f; // reseta após conserto
                 }
             }
             else
             {
-                tempoSegurando = 0f; //se soltar a tecla, zera o tempo segurando -> gerador n�o conserta
+                tempoSegurando = 0f; //se soltar a tecla, zera o tempo segurando -> gerador nao conserta
 
             }
         }
