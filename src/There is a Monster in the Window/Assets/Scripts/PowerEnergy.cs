@@ -1,17 +1,17 @@
-using System.Collections.Generic;
+ï»¿using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 
 public class PowerEnergy : MonoBehaviour
 { // Script de fazer as luzes quebrarem quando o gerador de energia quebrar
     public float vidaGerador = 90f; //vida do gerador, acaba em 90 seg da vida real (1min e meio)
-    public float tempoSegurando = 0f; //quantos segundos o jogador ESTÁ segurando a tecla, aumenta essa variável 
+    public float tempoSegurando = 0f; //quantos segundos o jogador ESTï¿½ segurando a tecla, aumenta essa variï¿½vel 
     public float tempoParaReparo = 10f; //tempo em segundos que o jogador deve segurar a tecla E para valer 
-    GameObject[] precisaLuz; //ARRAY para guardar QUAIS são os objetos que tem a tag que especifiquei (lights), dentro disso fica as luzes, as cameras de segurança e os sensores 
-    public bool geradorQuebrado = false; //essa variável serve para sabermos que o gerador JÁ QUEBROU, para não desligar as luzes toda hora
+    GameObject[] precisaLuz; //ARRAY para guardar QUAIS sï¿½o os objetos que tem a tag que especifiquei (lights), dentro disso fica as luzes, as cameras de seguranï¿½a e os sensores 
+    public bool geradorQuebrado = false; //essa variï¿½vel serve para sabermos que o gerador Jï¿½ QUEBROU, para nï¿½o desligar as luzes toda hora
 
-    public Transform Jogador; //lugar do player na cena, serve para ver se o jogador está perto do fusivel
-    public float distanciaParaSegurar = 1.5f; //distancia necessária para o jogador estar do fusivel
+    public Transform Jogador; //lugar do player na cena, serve para ver se o jogador estï¿½ perto do fusivel
+    public float distanciaParaSegurar = 1.5f; //distancia necessï¿½ria para o jogador estar do fusivel
 
     private Dictionary<Camera, RenderTexture> cameraTextures = new Dictionary<Camera, RenderTexture>(); //dicionario para guardar o valor das cameras e a render texture delas
 
@@ -22,11 +22,11 @@ public class PowerEnergy : MonoBehaviour
 
     }
 
-    // Aqui farei o gerador de energia quebrar quando a vida dele chegar no 0f, as luzes cairem e a função de apertar para consertar
+    // Aqui farei o gerador de energia quebrar quando a vida dele chegar no 0f, as luzes cairem e a funï¿½ï¿½o de apertar para consertar
     void Update()
     {
         //Vida do Gerador cair, e as luzes apagarem
-      
+
         if (!geradorQuebrado) //se o gerador NAO estiver quebrado, a vida diminui com os frames
         {
             vidaGerador -= Time.deltaTime;
@@ -42,38 +42,38 @@ public class PowerEnergy : MonoBehaviour
             }
         }
 
-        float distancia = Vector3.Distance(Jogador.position, transform.position); //para calcular a distancia que o player está do gerador, ver depois o raycast!!!
+        float distancia = Vector3.Distance(Jogador.position, transform.position); //para calcular a distancia que o player estï¿½ do gerador, ver depois o raycast!!!
 
 
         if (geradorQuebrado && distancia <= distanciaParaSegurar)
         {
-            
+
             if (Input.GetKey(KeyCode.E))
             {
 
-                tempoSegurando += Time.deltaTime; //conta quantos segundos o tempo segurando está subindo, de acordo com os frames (Deltatime)
+                tempoSegurando += Time.deltaTime; //conta quantos segundos o tempo segurando estï¿½ subindo, de acordo com os frames (Deltatime)
                 Debug.Log("Tempo acumulado: " + tempoSegurando.ToString("F2") + " / " + tempoParaReparo);
 
                 if (tempoSegurando >= tempoParaReparo)
                 {
                     Debug.Log(">> CHAMANDO REPARO AGORA");
                     ConsertarGerador(); //chama o void de consertar o gerador SOMENTE se a tecla E foi pressionada por 10 segundos
-                    tempoSegurando = 0f; // reseta após conserto
-                    
+                    tempoSegurando = 0f; // reseta apï¿½s conserto
+
 
                 }
             }
             else
             {
-                tempoSegurando = 0f; //se soltar a tecla, zera o tempo segurando -> gerador não conserta
+                tempoSegurando = 0f; //se soltar a tecla, zera o tempo segurando -> gerador nï¿½o conserta
 
             }
         }
         else
         {
-            tempoSegurando = 0f; // só zera se sair da área
+            tempoSegurando = 0f; // sï¿½ zera se sair da ï¿½rea
         }
-        
+
     }
 
     void DesligarLuzes() //pega todos os objetos do array de precisaLuz e desliga, tambem pega a renderer da camera
@@ -102,7 +102,7 @@ public class PowerEnergy : MonoBehaviour
                     }
 
 
-                    LimparRenderTexture(rt); //  Limpa o conteúdo da tela do monitor
+                    LimparRenderTexture(rt); //  Limpa o conteï¿½do da tela do monitor
                     camera.targetTexture = null;
                 }
 
@@ -138,7 +138,7 @@ public class PowerEnergy : MonoBehaviour
     }
 
 
-   
+
 
     void LigarLuzes() //void de ligar luzes usando foreach game object set active, com os objetos do array de focos
     {
@@ -183,7 +183,7 @@ public class PowerEnergy : MonoBehaviour
     {
         vidaGerador = 90f; //se o player segurou a tecla por 10 seg, a vida do gerador volta pra 90f
         tempoSegurando = 0f;
-        geradorQuebrado = false; //marca que não está mais quebrado e chama o void de luzes ligadas
+        geradorQuebrado = false; //marca que nï¿½o estï¿½ mais quebrado e chama o void de luzes ligadas
         LigarLuzes();
         Debug.Log("Gerador reparado!");
 

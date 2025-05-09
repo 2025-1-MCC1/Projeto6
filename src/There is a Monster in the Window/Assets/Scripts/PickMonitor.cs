@@ -5,7 +5,6 @@ public class PickMonitor : MonoBehaviour
     public GameObject interactUI;
     private bool colliding;
     public GameObject monitorMao;
-    public GameObject telaMonitor;
 
     void Start()
     {

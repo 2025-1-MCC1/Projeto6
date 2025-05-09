@@ -18,21 +18,24 @@ public class MonsterBehavior : MonoBehaviour
     private bool monsterHiding = true;
 
     public Vector3 hideLocation = new Vector3(0, -1000, 0);
-    
+
+    public GameObject interactUI;
+
+
     void Start()
     {
-        
+
         transform.position = hideLocation;
         destinations = new Transform[] { dest1, dest2, dest3, dest4 };
-        
+
         StartCoroutine(DelayMonsterSpawn());
-        
+
     }
 
     void Update()
-        {
-           
-        }
+    {
+
+    }
 
     IEnumerator DelayMonsterSpawn()
     {
@@ -41,17 +44,17 @@ public class MonsterBehavior : MonoBehaviour
         Debug.Log("Monstro se teleportou");
         IsActive();
 
-        yield return new WaitUntil(() => itemSwitcher.activeItem == 1  && Vector3.Distance(transform.position, player.position) < detectionDistance);
-        
+        yield return new WaitUntil(() => itemSwitcher.activeItem == 1 && Vector3.Distance(transform.position, player.position) < detectionDistance);
+
         UIController.uiActive = true;
         UIController.actionText = "Activate spiritbox";
         UIController.commandText = "[F] Activate";
-        
 
-       
+
+
         yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.F));
         UIController.uiActive = false;
-        
+
         ReturnHiding();
 
 
@@ -69,13 +72,12 @@ public class MonsterBehavior : MonoBehaviour
         Transform chosenDest = destinations[index];
         transform.position = chosenDest.position;
         transform.rotation = chosenDest.rotation;
-        
+
 
     }
 
-  
+
 
 }
-
 
 

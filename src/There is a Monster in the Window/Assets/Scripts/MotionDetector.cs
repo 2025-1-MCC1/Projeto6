@@ -39,7 +39,7 @@ public class MotionDetector : MonoBehaviour
         {
             Debug.Log("Área limpa.");
 
-            spotted = true;
+            spotted = false;
 
             // Muda a cor da luz de volta para verde (normalidade)
             if (spotLight != null)

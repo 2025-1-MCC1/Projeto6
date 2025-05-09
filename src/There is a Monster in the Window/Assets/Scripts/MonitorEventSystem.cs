@@ -47,7 +47,7 @@ public class MonitorEventSystem : MonoBehaviour
 
         if (cam1.spotted || cam2.spotted || cam3.spotted)
         {
-            cameraStatusText.text = "Camera_status     >> ERROR";
+            cameraStatusText.text = "Camera_status     >> LOOK";
             cameraStatusText.color = Color.red;
         }
         else if (!cam1.spotted && !cam2.spotted && !cam3.spotted)
@@ -58,7 +58,7 @@ public class MonitorEventSystem : MonoBehaviour
         
         if (movSensor1.spotted || movSensor2.spotted || movSensor3.spotted)
         {
-            movementStatusText.text = "Movement_status >> ERROR";
+            movementStatusText.text = "Movement_status >> LOOK";
             movementStatusText.color = Color.red;
         }
         else if (!movSensor1.spotted && !movSensor2.spotted && !movSensor3.spotted)
