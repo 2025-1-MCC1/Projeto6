@@ -10,4 +10,14 @@ public class Menu : MonoBehaviour
         // Carrega a cena de índice 1 (definido na build settings do Unity)
         SceneManager.LoadScene("Lore");
     }
+
+    public void Controls()
+    {
+        SceneManager.LoadScene("Controls");
+    }
+    
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }

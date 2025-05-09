@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 
 
 public class MonsterBehavior : MonoBehaviour
@@ -44,21 +45,36 @@ public class MonsterBehavior : MonoBehaviour
         Debug.Log("Monstro se teleportou");
         IsActive();
 
-        yield return new WaitUntil(() => itemSwitcher.activeItem == 1 && Vector3.Distance(transform.position, player.position) < detectionDistance);
+        OnMouseOver();
 
-        UIController.uiActive = true;
-        UIController.actionText = "Activate spiritbox";
-        UIController.commandText = "[F] Activate";
-
-
-
-        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.F));
-        UIController.uiActive = false;
-
-        ReturnHiding();
-
-
+        
     }
+    private void OnMouseOver()
+    {
+        if (itemSwitcher.activeItem == 1 && Vector3.Distance(transform.position, player.position) < detectionDistance)
+        {
+            UIController.uiActive = true;
+            UIController.actionText = "Activate spiritbox";
+            UIController.commandText = "[F] Activate";
+
+            if (Input.GetKeyDown(KeyCode.F))
+            {
+                UIController.actionText = "";
+                UIController.commandText = "";
+                UIController.uiActive = false;
+
+                ReturnHiding();
+            }
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        UIController.actionText = "";
+        UIController.commandText = "";
+        UIController.uiActive = false;
+    }
+
     private void ReturnHiding()
     {
         monsterHiding = true;

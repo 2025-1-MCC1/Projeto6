@@ -41,26 +41,32 @@ public class PowerEnergy : MonoBehaviour
 
             }
         }
+    }
 
+    private void OnMouseOver()
+    {
         float distancia = Vector3.Distance(Jogador.position, transform.position); //para calcular a distancia que o player est� do gerador, ver depois o raycast!!!
-
-
         if (geradorQuebrado && distancia <= distanciaParaSegurar)
         {
+            UIController.actionText = "Hold 10 Seconds";
+            UIController.commandText = "[E] Hold";
+            UIController.uiActive = true;
 
             if (Input.GetKey(KeyCode.E))
             {
 
                 tempoSegurando += Time.deltaTime; //conta quantos segundos o tempo segurando est� subindo, de acordo com os frames (Deltatime)
                 Debug.Log("Tempo acumulado: " + tempoSegurando.ToString("F2") + " / " + tempoParaReparo);
+                UIController.actionText = "Fixing: " + tempoSegurando.ToString("F2") + " / " + tempoParaReparo;
 
                 if (tempoSegurando >= tempoParaReparo)
                 {
+                    UIController.actionText = "";
+                    UIController.commandText = "";
+                    UIController.uiActive = false;
                     Debug.Log(">> CHAMANDO REPARO AGORA");
                     ConsertarGerador(); //chama o void de consertar o gerador SOMENTE se a tecla E foi pressionada por 10 segundos
                     tempoSegurando = 0f; // reseta ap�s conserto
-
-
                 }
             }
             else
@@ -69,11 +75,13 @@ public class PowerEnergy : MonoBehaviour
 
             }
         }
-        else
-        {
-            tempoSegurando = 0f; // s� zera se sair da �rea
-        }
-
+    }
+    private void OnMouseExit()
+    {
+        tempoSegurando = 0f;
+        UIController.actionText = "";
+        UIController.commandText = "";
+        UIController.uiActive = false;
     }
 
     void DesligarLuzes() //pega todos os objetos do array de precisaLuz e desliga, tambem pega a renderer da camera
