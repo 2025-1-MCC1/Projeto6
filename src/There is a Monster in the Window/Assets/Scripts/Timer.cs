@@ -36,7 +36,7 @@ public class Timer : MonoBehaviour
         // Verifica se atingiu ou passou das 6:00
         if (currentGameTimeInMinutes >= 360f && sceneLoaded)
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene("YouSurvived");
         }
 
         // Calcula horas e minutos atuais

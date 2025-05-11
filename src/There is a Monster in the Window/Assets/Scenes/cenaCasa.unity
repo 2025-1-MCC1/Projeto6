@@ -20464,7 +20464,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220000265}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.32818586, y: 0.4730242, z: 0.62290245, w: 0.52965534}
+  m_LocalRotation: {x: -0.20737973, y: 0.4190981, z: 0.70054877, w: 0.5390565}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -20472,7 +20472,7 @@ Transform:
   - {fileID: 1425610990}
   - {fileID: 134082255}
   m_Father: {fileID: 1405128553}
-  m_LocalEulerAnglesHint: {x: -110.455, y: -164.699, z: 268.594}
+  m_LocalEulerAnglesHint: {x: -125.828, y: -164.007, z: 276.627}
 --- !u!114 &1220000267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25601,43 +25601,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3bf5eaaf019184f93888511cab7bc810, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.804878
+      value: -15.656
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3bf5eaaf019184f93888511cab7bc810, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2226301
+      value: 1.223
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3bf5eaaf019184f93888511cab7bc810, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.321676
+      value: -8.093
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3bf5eaaf019184f93888511cab7bc810, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.84023064
+      value: 0.75591636
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3bf5eaaf019184f93888511cab7bc810, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.044802878
+      value: -0.0154799605
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3bf5eaaf019184f93888511cab7bc810, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.53756076
+      value: 0.65431166
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3bf5eaaf019184f93888511cab7bc810, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.055077996
+      value: -0.015069046
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3bf5eaaf019184f93888511cab7bc810, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -0.921
+      value: -0.211
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3bf5eaaf019184f93888511cab7bc810, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 65.286
+      value: 81.763
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3bf5eaaf019184f93888511cab7bc810, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -8.091
+      value: -2.467
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 3bf5eaaf019184f93888511cab7bc810, type: 3}
       propertyPath: m_ConstrainProportionsScale
@@ -33860,7 +33860,7 @@ Light:
   serializedVersion: 11
   m_Type: 2
   m_Color: {r: 0.735849, g: 0.61871016, b: 0.30313274, a: 1}
-  m_Intensity: 9.88
+  m_Intensity: 8.57
   m_Range: 5.306114
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -39030,6 +39030,7 @@ Transform:
   - {fileID: 2895469393033545743}
   - {fileID: 2256711320436898041}
   - {fileID: 1318042625}
+  - {fileID: 4979306554978783703}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &543711225836360851
@@ -70968,11 +70969,11 @@ Transform:
   m_GameObject: {fileID: 5891430708745232701}
   serializedVersion: 2
   m_LocalRotation: {x: -0.50000006, y: -0.50000006, z: -0.49999997, w: 0.49999997}
-  m_LocalPosition: {x: -14.22868, y: 1.2244747, z: -19.724937}
+  m_LocalPosition: {x: 23.13132, y: 1.2244747, z: -131.34494}
   m_LocalScale: {x: 11, y: 55.870914, z: 54.562737}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 543450653588733397}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!23 &4983837141170007540
 MeshRenderer:
@@ -100377,7 +100378,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 742259668}
   - {fileID: 543450653588733397}
-  - {fileID: 4979306554978783703}
   - {fileID: 8550125050120637148}
   - {fileID: 1567355833}
   - {fileID: 8997996947118718363}

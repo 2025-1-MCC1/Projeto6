@@ -792,14 +792,14 @@ MonoBehaviour:
     tecnologia. Desde o nascimento at\xE9 a morte, cada passo da vida era mediado
     por m\xE1quinas inteligentes. Cidades inteiras eram controladas por sistemas
     automatizados, e a intelig\xEAncia artificial era tratada como o novo deus moderno.
-    Mas, em um dia terr\xEDvel, algo saiu terrivelmente errado.\n\nDurante um experimento
-    secreto em um centro de pesquisa em Boston, cientistas tentaram criar formas
-    de vida sint\xE9ticas com intelig\xEAncia artificial aut\xF4noma. Ao cruzarem
-    os limites da \xE9tica e da compreens\xE3o, criaram criaturas h\xEDbridas \u2014
-    monstros de carca\xE7a met\xE1lica e pele org\xE2nica, uma fus\xE3o de m\xE1quina
-    e animal. Incontrol\xE1veis e hostis, essas entidades dizimaram quase toda a
-    popula\xE7\xE3o humana em poucas semanas. As grandes cidades se calaram, as redes
-    ca\xEDram, e o mundo mergulhou no sil\xEAncio da cat\xE1strofe."
+    Mas, em um dia terr\xEDvel, algo saiu errado.\n\nDurante um experimento em um
+    centro de pesquisa em Boston, cientistas tentaram criar formas de vida sint\xE9ticas
+    com intelig\xEAncia artificial aut\xF4noma. Ao cruzarem os limites da \xE9tica
+    e da compreens\xE3o, criaram criaturas h\xEDbridas \u2014 monstros de carca\xE7a
+    met\xE1lica e pele org\xE2nica, uma fus\xE3o de m\xE1quina e animal. Incontrol\xE1veis
+    e hostis, essas entidades dizimaram quase toda a popula\xE7\xE3o humana em poucas
+    semanas. As grandes cidades se calaram, as redes ca\xEDram, e o mundo mergulhou
+    no sil\xEAncio da cat\xE1strofe."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
