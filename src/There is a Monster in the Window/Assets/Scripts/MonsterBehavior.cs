@@ -9,11 +9,10 @@ public class MonsterBehavior : MonoBehaviour
     private Transform[] destinations;
 
     public ItemSwitcher itemSwitcher;
-
-
     public Transform player;
 
     public float timeDelay = 10f;
+    public float firstSpawn = 120f;
 
     public float detectionDistance = 5f;
     private bool monsterHiding = true;
@@ -22,14 +21,24 @@ public class MonsterBehavior : MonoBehaviour
 
     public GameObject interactUI;
 
+    public AudioSource teleportAudio; //som do teleporte
+    public AudioSource hideAudio;    //som de quando aperta F
+
+
 
     void Start()
     {
-
-        transform.position = hideLocation;
         destinations = new Transform[] { dest1, dest2, dest3, dest4 };
+        transform.position = hideLocation;
 
-        StartCoroutine(DelayMonsterSpawn());
+        
+        teleportAudio = GetComponent<AudioSource>();
+        hideAudio = GetComponent<AudioSource>();
+      
+
+        StartCoroutine(FirstTimeSpawn());
+
+
 
     }
 
@@ -44,10 +53,18 @@ public class MonsterBehavior : MonoBehaviour
 
         Debug.Log("Monstro se teleportou");
         IsActive();
+        teleportAudio.Play();
 
         OnMouseOver();
 
-        
+
+    }
+
+    IEnumerator FirstTimeSpawn()
+    {
+        yield return new WaitForSeconds(firstSpawn);
+        Debug.Log("Primeira aparição");
+        StartCoroutine(DelayMonsterSpawn());
     }
     private void OnMouseOver()
     {
@@ -63,11 +80,13 @@ public class MonsterBehavior : MonoBehaviour
                 UIController.commandText = "";
                 UIController.uiActive = false;
 
+                hideAudio.Play();
+                
                 ReturnHiding();
             }
         }
     }
-
+   
     private void OnMouseExit()
     {
         UIController.actionText = "";
@@ -88,6 +107,9 @@ public class MonsterBehavior : MonoBehaviour
         Transform chosenDest = destinations[index];
         transform.position = chosenDest.position;
         transform.rotation = chosenDest.rotation;
+        
+        
+        
 
 
     }
@@ -95,5 +117,3 @@ public class MonsterBehavior : MonoBehaviour
 
 
 }
-
-

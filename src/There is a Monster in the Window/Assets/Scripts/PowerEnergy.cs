@@ -16,6 +16,12 @@ public class PowerEnergy : MonoBehaviour
 
     private Dictionary<Camera, RenderTexture> cameraTextures = new Dictionary<Camera, RenderTexture>(); //dicionario para guardar o valor das cameras e a render texture delas
 
+    public AudioSource powerBuzzing; //som de segurando E
+
+    public AudioSource powerOutage; //som de queda de energia
+
+    public AudioSource powerBack;   //som de energia voltando
+
     void Start()
     {
         //Para capturar todas as luzes que existem na casa e guardar em um Vector
@@ -41,6 +47,8 @@ public class PowerEnergy : MonoBehaviour
                 geradorQuebrado = true;
                 DesligarLuzes();
 
+                powerOutage.Play();
+
             }
         }
     }
@@ -61,6 +69,8 @@ public class PowerEnergy : MonoBehaviour
                 Debug.Log("Tempo acumulado: " + tempoSegurando.ToString("F2") + " / " + tempoParaReparo);
                 UIController.actionText = "Fixing: " + tempoSegurando.ToString("F2") + " / " + tempoParaReparo;
 
+                powerBuzzing.Play();
+
                 if (tempoSegurando >= tempoParaReparo)
                 {
                     UIController.actionText = "";
@@ -69,12 +79,15 @@ public class PowerEnergy : MonoBehaviour
                     
                     ConsertarGerador(); //chama o void de consertar o gerador SOMENTE se a tecla E foi pressionada por 10 segundos
                     tempoSegurando = 0f; // reseta após conserto
+
+                    powerBuzzing.Stop();
                 }
             }
             else
             {
                 tempoSegurando = 0f; //se soltar a tecla, zera o tempo segurando -> gerador nao conserta
-
+               
+                powerBuzzing.Stop();
             }
         }
     }
@@ -84,6 +97,8 @@ public class PowerEnergy : MonoBehaviour
         UIController.actionText = "";
         UIController.commandText = "";
         UIController.uiActive = false;
+
+        powerBuzzing.Stop();
     }
 
     void DesligarLuzes() //pega todos os objetos do array de precisaLuz e desliga, tambem pega a renderer da camera
@@ -225,6 +240,7 @@ public class PowerEnergy : MonoBehaviour
         geradorQuebrado = false; //marca que n�o est� mais quebrado e chama o void de luzes ligadas
         LigarLuzes();
         Debug.Log("Gerador reparado!");
+        powerBack.Play();
 
     }
 
