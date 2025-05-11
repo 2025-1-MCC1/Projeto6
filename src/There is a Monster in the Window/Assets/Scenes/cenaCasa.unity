@@ -4357,7 +4357,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.8679245, g: 0.6759386, b: 0.21015774, a: 1}
+  m_Color: {r: 0.9960785, g: 0.83921576, b: 0.41960788, a: 1}
   m_Intensity: 1
   m_Range: 4.46
   m_SpotAngle: 30
@@ -8079,7 +8079,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.8679245, g: 0.6759386, b: 0.21015774, a: 1}
+  m_Color: {r: 0.9960785, g: 0.83921576, b: 0.41960788, a: 1}
   m_Intensity: 1
   m_Range: 4.46
   m_SpotAngle: 30
@@ -9070,7 +9070,7 @@ GameObject:
   - component: {fileID: 569584572}
   m_Layer: 0
   m_Name: sensor
-  m_TagString: Light
+  m_TagString: sensor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9671,7 +9671,7 @@ GameObject:
   - component: {fileID: 591507853}
   m_Layer: 0
   m_Name: sensor
-  m_TagString: Light
+  m_TagString: sensor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9862,7 +9862,7 @@ GameObject:
   - component: {fileID: 594806793}
   m_Layer: 0
   m_Name: sensor
-  m_TagString: Light
+  m_TagString: sensor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10624,7 +10624,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.8679245, g: 0.6759386, b: 0.21015774, a: 1}
+  m_Color: {r: 0.9960785, g: 0.83921576, b: 0.41960788, a: 1}
   m_Intensity: 1
   m_Range: 4.46
   m_SpotAngle: 30
@@ -10745,7 +10745,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.8679245, g: 0.6759386, b: 0.21015774, a: 1}
+  m_Color: {r: 0.9960785, g: 0.8431373, b: 0.42352945, a: 1}
   m_Intensity: 1
   m_Range: 4.46
   m_SpotAngle: 30
@@ -14990,7 +14990,7 @@ GameObject:
   - component: {fileID: 905343116}
   m_Layer: 0
   m_Name: sensor
-  m_TagString: Light
+  m_TagString: sensor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21123,7 +21123,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.8679245, g: 0.6759386, b: 0.21015774, a: 1}
+  m_Color: {r: 0.9960785, g: 0.83921576, b: 0.41960788, a: 1}
   m_Intensity: 1
   m_Range: 4.46
   m_SpotAngle: 30
@@ -23715,7 +23715,7 @@ GameObject:
   - component: {fileID: 1425610995}
   m_Layer: 0
   m_Name: sensor
-  m_TagString: Light
+  m_TagString: sensor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24931,7 +24931,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 2
-  m_Color: {r: 0.8679245, g: 0.6759386, b: 0.21015774, a: 1}
+  m_Color: {r: 0.9960785, g: 0.8431373, b: 0.427451, a: 1}
   m_Intensity: 1
   m_Range: 4.46
   m_SpotAngle: 30
@@ -26374,7 +26374,7 @@ Transform:
   m_GameObject: {fileID: 1563988070}
   serializedVersion: 2
   m_LocalRotation: {x: 0.99632305, y: 0.006694501, z: -0.028583724, w: 0.08048952}
-  m_LocalPosition: {x: 2.274, y: -0.01, z: 0.316}
+  m_LocalPosition: {x: 2.288, y: 0.025, z: 0.531}
   m_LocalScale: {x: 0.7275089, y: 0.72750884, z: 0.72750884}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33632,7 +33632,7 @@ GameObject:
   - component: {fileID: 2067763637}
   m_Layer: 0
   m_Name: sensor
-  m_TagString: Light
+  m_TagString: sensor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

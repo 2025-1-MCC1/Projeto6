@@ -8,8 +8,9 @@ public class PowerEnergy : MonoBehaviour
     public float tempoSegurando = 0f; //quantos segundos o jogador EST� segurando a tecla, aumenta essa vari�vel 
     public float tempoParaReparo = 10f; //tempo em segundos que o jogador deve segurar a tecla E para valer 
     GameObject[] precisaLuz; //ARRAY para guardar QUAIS s�o os objetos que tem a tag que especifiquei (lights), dentro disso fica as luzes, as cameras de seguran�a e os sensores 
+    GameObject[] sensores;
     public bool geradorQuebrado = false; //essa vari�vel serve para sabermos que o gerador J� QUEBROU, para n�o desligar as luzes toda hora
-
+ 
     public Transform Jogador; //lugar do player na cena, serve para ver se o jogador est� perto do fusivel
     public float distanciaParaSegurar = 1.5f; //distancia necess�ria para o jogador estar do fusivel
 
@@ -19,7 +20,8 @@ public class PowerEnergy : MonoBehaviour
     {
         //Para capturar todas as luzes que existem na casa e guardar em um Vector
         precisaLuz = GameObject.FindGameObjectsWithTag("Light"); //coloca todos os objetos que tiverem a tag light dentro do array de Focos, guardando eles
-
+        sensores = GameObject.FindGameObjectsWithTag("sensor");
+        vidaGerador = 0f;
     }
 
     // Aqui farei o gerador de energia quebrar quando a vida dele chegar no 0f, as luzes cairem e a fun��o de apertar para consertar
@@ -64,7 +66,7 @@ public class PowerEnergy : MonoBehaviour
                     UIController.actionText = "";
                     UIController.commandText = "";
                     UIController.uiActive = false;
-                    Debug.Log(">> CHAMANDO REPARO AGORA");
+                    
                     ConsertarGerador(); //chama o void de consertar o gerador SOMENTE se a tecla E foi pressionada por 10 segundos
                     tempoSegurando = 0f; // reseta após conserto
                 }
@@ -118,7 +120,27 @@ public class PowerEnergy : MonoBehaviour
             }
         }
 
-        GameObject[] sensoresMovimento = new GameObject[] //cria um array com todos os sensores que tem nomes diferentes e outra tag que nao posso modificar ("Pickup")
+        foreach (GameObject sensor in sensores)
+        {
+            if (sensor != null)
+            {
+                // Desabilitar o script do MotionDetector dos sensores portateis
+                var sensorScript = sensor.GetComponentInChildren<MotionDetector>();
+                if (sensorScript != null)
+                {
+                    sensorScript.enabled = false; // Desliga o script
+                }
+
+                // Desabilitar o Collider de TODOS os sensores com a tag sensor (portateis, camera)
+                Collider sensorCollider = sensor.GetComponentInChildren<Collider>();
+                if (sensorCollider != null)
+                {
+                    sensorCollider.enabled = false; // Desativa o Collider
+                }
+            }
+        }
+
+       /* GameObject[] sensoresMovimento = new GameObject[] //cria um array com todos os sensores que tem nomes diferentes e outra tag que nao posso modificar ("Pickup")
          {
              GameObject.Find("MovSensor"),
              GameObject.Find("MovSensor2"),
@@ -129,13 +151,21 @@ public class PowerEnergy : MonoBehaviour
         {
             if (sensor != null)
             {
-                var sensorScript = sensor.GetComponentInChildren<MotionDetector>();
+                MonoBehaviour sensorScript = sensor.GetComponentInChildren<MotionDetector>() as MonoBehaviour;
+
                 if (sensorScript != null)
                 {
-                    sensorScript.enabled = false; //desliga o script do sensor de movimento
+                    sensorScript.enabled = false;
+                    Debug.Log("Script MotionDetector desativado no sensor: " + sensor.name);
+                }
+                else
+                {
+                    Debug.LogWarning("MotionDetector não encontrado como MonoBehaviour em: " + sensor.name);
                 }
             }
-        }
+        }*/
+
+
     }
     void LimparRenderTexture(RenderTexture renderTexture)
     {
@@ -167,21 +197,22 @@ public class PowerEnergy : MonoBehaviour
                 }
             }
         }
-        GameObject[] sensoresMovimento = new GameObject[] //cria um array com todos os sensores que tem nomes diferentes e outra tag que nao posso modificar ("Pickup")
-          {
-             GameObject.Find("MovSensor"),
-             GameObject.Find("MovSensor2"),
-             GameObject.Find("MovSensor3"),
-          };
-
-        foreach (GameObject sensor in sensoresMovimento)
+        foreach (GameObject sensor in sensores)
         {
             if (sensor != null)
             {
+                // Desabilitar o script do MotionDetector
                 var sensorScript = sensor.GetComponentInChildren<MotionDetector>();
                 if (sensorScript != null)
                 {
-                    sensorScript.enabled = true; //liga o script do sensor de movimento
+                    sensorScript.enabled = true; // liga o script
+                }
+
+                // Desabilitar o Collider para impedir detecção de movimento
+                Collider sensorCollider = sensor.GetComponentInChildren<Collider>();
+                if (sensorCollider != null)
+                {
+                    sensorCollider.enabled = true; // liga o Collider
                 }
             }
         }

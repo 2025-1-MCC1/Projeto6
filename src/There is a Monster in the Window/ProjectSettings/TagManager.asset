@@ -8,7 +8,7 @@ TagManager:
   - canPickUp
   - Monster
   - Light
-  - CameraSeguranca
+  - sensor
   layers:
   - Default
   - TransparentFX
