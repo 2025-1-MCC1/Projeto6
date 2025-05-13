@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
@@ -5,8 +6,12 @@ public class DoorOpen : MonoBehaviour
 {
     public GameObject interactUI;
     public Animator animator;
+    
     private bool colliding;
     private bool doorOpen = false;
+
+    public AudioSource openAudio;
+    public AudioSource closeAudio;
 
     void Start()
     {
@@ -20,6 +25,7 @@ public class DoorOpen : MonoBehaviour
             doorOpen = true;
             animator.SetTrigger("Open");
             interactUI.SetActive(true);
+            openAudio.Play();
             //Debug.Log("Porta abriu");
         }
     }
@@ -41,7 +47,7 @@ public class DoorOpen : MonoBehaviour
             if (doorOpen)
             {
                 animator.SetTrigger("Close");
-               
+                closeAudio.Play();
                 //Debug.Log("Porta fechou");
             }
             interactUI.SetActive(false);
@@ -50,6 +56,7 @@ public class DoorOpen : MonoBehaviour
             colliding = false;
         }
     }
+    
 }   
 
 

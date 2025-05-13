@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 
 public class MonsterBehavior : MonoBehaviour
 {
-    public Transform dest1, dest2, dest3, dest4;
+    public Transform dest1, dest2, dest3, dest4, dest5;
     private Transform[] destinations;
 
     public ItemSwitcher itemSwitcher;
@@ -28,7 +28,7 @@ public class MonsterBehavior : MonoBehaviour
 
     void Start()
     {
-        destinations = new Transform[] { dest1, dest2, dest3, dest4 };
+        destinations = new Transform[] { dest1, dest2, dest3, dest4, dest5 };
         transform.position = hideLocation;
 
         
@@ -76,11 +76,12 @@ public class MonsterBehavior : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.F))
             {
+                hideAudio.Play();
                 UIController.actionText = "";
                 UIController.commandText = "";
                 UIController.uiActive = false;
 
-                hideAudio.Play();
+                
                 
                 ReturnHiding();
             }
@@ -96,6 +97,7 @@ public class MonsterBehavior : MonoBehaviour
 
     private void ReturnHiding()
     {
+        
         monsterHiding = true;
         transform.position = hideLocation;
         StartCoroutine(DelayMonsterSpawn());
