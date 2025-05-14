@@ -17,13 +17,20 @@ public class Radio : MonoBehaviour
 
     private bool dialogoIniciado = false;
     
+    private void Start()
+    {
+        if (RadioUI != null)
+        {
+            RadioUI.SetActive(false);
+        }
+    }
+    
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && !dialogoIniciado)
         {
             dialogoIniciado = true;
-            RadioUI.SetActive(true);
             StartCoroutine(ExecutarDialogo());
         }
     }
@@ -32,14 +39,14 @@ public class Radio : MonoBehaviour
     {
         RadioUI.SetActive(true);
 
-        // Falas do rádio
+        // falas do rádio
         foreach (string fala in falasRadio)
         {
             textoDialogo.color = corRadio;
             yield return StartCoroutine(DigitarTexto(fala));
             yield return new WaitForSeconds(tempoEntreFalas);
         }
-        // Falas do jogador
+        // falas do jogador
         foreach (string fala in falasJogador)
         {
             textoDialogo.color = corPlayer;
@@ -47,21 +54,20 @@ public class Radio : MonoBehaviour
             yield return new WaitForSeconds(tempoEntreFalas);
         }
 
+        yield return new WaitForSeconds(1f);
         RadioUI.SetActive(false);
     }
     private IEnumerator DigitarTexto(string frase) 
     {
         textoDialogo.text = "";
+
         foreach (char letra in frase.ToCharArray())
         {
             textoDialogo.text += letra;
             yield return new WaitForSeconds(typeDelay);
         }
     }
-    void Start()
-    {        
-
-    }
+    
 
     void Update()
     {

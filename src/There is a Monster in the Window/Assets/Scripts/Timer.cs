@@ -4,10 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
+    public float GetCurrentMinutes()
+    {
+        return currentGameTimeInMinutes;
+    }
+
     [SerializeField] TextMeshProUGUI timerText;
 
     // Começa às 20:00 (20 * 60 = 1200 minutos)
-    float currentGameTimeInMinutes = 1200f;
+    public float currentGameTimeInMinutes = 1200f;
 
     // 1 hora do jogo = 150 segundos reais
     const float realSecondsPerGameHour = 150f;
