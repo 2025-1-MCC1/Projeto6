@@ -98,6 +98,13 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 -<a href="https://unity.com/releases/editor/whats-new/6000.0.38#notes">UNITY</a>
 
+Abrir a pasta "src"
+
+Baixar a pasta "There is a Monster in the Window"
+
+Descompactar o arquivo
+
+Abrir a pasta como um projeto na unity (Add -> Add project from disk -> There is Monster in the Window)
 
 
 ## 📋 Licença/License
