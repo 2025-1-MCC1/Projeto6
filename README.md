@@ -68,13 +68,13 @@
 
 <b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
 
-Há também 3 pastas que seguem da seguinte forma:
+Há também 5 pastas que seguem da seguinte forma:
 
 <b>Documentos</b>: Pasta com todos os documentos importantes do jogo.
 
-<b>entregas 1</b>: Todas as entregas do dia 22 de Abril, de todas as materias, estará nesta pasta.
+<b>├── entregas 1</b>: Todas as entregas do dia 22 de Abril, de todas as materias, estará nesta pasta.
 
-<b>entregas 2</b>: Todas as entregas do dia 18 de Maio, de todas as materias, estará nesta pasta.
+<b>└── entregas 2</b>: Todas as entregas do dia 18 de Maio, de todas as materias, estará nesta pasta.
 
 <b>Src</b>: Pasta com todos os arquivos do jogo.
 
