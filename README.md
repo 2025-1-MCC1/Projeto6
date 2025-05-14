@@ -126,4 +126,5 @@ Aqui estão as referências usadas no projeto.
 4. <https://elbolilloduro.itch.io/exploration-objects/>
 5. <https://chooser-beta.creativecommons.org/>
 6. <https://freesound.org/>
+7. https://mixkit.co/
 
