@@ -70,7 +70,7 @@ Há também 3 pastas que seguem da seguinte forma:
 
 <b>entregas 2</b>: Todas as entregas do dia 18 de Maio, de todas as materias, estará nesta pasta.
 
-<b>There is a Monster in the Window</b>: Pasta com todos os arquivos do jogo.
+<b>Src</b>: Pasta com todos os arquivos do jogo.
 
 ## 🛠 Instalação
 
