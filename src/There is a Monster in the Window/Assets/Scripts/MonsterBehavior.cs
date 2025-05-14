@@ -97,7 +97,8 @@ public class MonsterBehavior : MonoBehaviour
 
     private void ReturnHiding()
     {
-        
+        hideAudio.Play();
+        StartCoroutine(AudioEnding());
         monsterHiding = true;
         transform.position = hideLocation;
         StartCoroutine(DelayMonsterSpawn());
@@ -111,11 +112,12 @@ public class MonsterBehavior : MonoBehaviour
         transform.rotation = chosenDest.rotation;
         
         
-        
-
 
     }
 
-
+    IEnumerator AudioEnding()
+    {
+        yield return new WaitUntil(() => hideAudio.isPlaying);
+    }
 
 }

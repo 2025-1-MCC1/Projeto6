@@ -44,7 +44,7 @@ public class DoorOpen : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (doorOpen)
+            if (doorOpen == true)
             {
                 animator.SetTrigger("Close");
                 closeAudio.Play();
