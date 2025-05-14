@@ -33,7 +33,7 @@
 <pre>
 -Raiz
 │
-├── entregas
+├── Documentos
 │   ├── entrega 1
 │   │   ├── entrega Cálculo 1
 │   │   ├── entrega Algoritmos e Lógica de Programação
@@ -47,12 +47,15 @@
 │       ├── entrega Jogos Digitais e Sistemas Digitais Interativos
 │       └── entrega Projeto Interdisciplinar: Jogos Digitais
 │
-├── There is a Monster in the Window
-│   ├── Assets
-│   ├── Packages
-│   ├── ProjectSettings
-│   ├── .gitignore
-│   └── .vsconfig
+├── Imagens
+│ 
+├── Src
+│   ├──There is a Monster in the Window
+│       ├── Assets
+│       ├── Packages
+│       ├── ProjectSettings
+│       ├── .gitignore
+│       └── .vsconfig
 |
 └── readme.md
 </pre>
