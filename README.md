@@ -33,7 +33,7 @@
 ## 🛠 Estrutura de pastas
 
 <pre>
--Raiz
+├── Raiz
 │
 ├── Documentos
 │   ├── entrega 1
