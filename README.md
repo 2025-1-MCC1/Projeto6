@@ -57,6 +57,8 @@
 │       ├── .gitignore
 │       └── .vsconfig
 |
+├── Executável
+|  
 └── readme.md
 </pre>
 
@@ -66,11 +68,15 @@
 
 Há também 3 pastas que seguem da seguinte forma:
 
+<b>Documentos</b>: Pasta com todos os documentos importantes do jogo.
+
 <b>entregas 1</b>: Todas as entregas do dia 22 de Abril, de todas as materias, estará nesta pasta.
 
 <b>entregas 2</b>: Todas as entregas do dia 18 de Maio, de todas as materias, estará nesta pasta.
 
 <b>Src</b>: Pasta com todos os arquivos do jogo.
+
+<b>Executável</b>: Pasta com todos o arquivo executável do jogo.
 
 ## 🛠 Instalação
 
