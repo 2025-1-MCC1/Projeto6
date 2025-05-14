@@ -101,7 +101,8 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 
 ## 📋 Licença/License
-There is a Monster in the Window © 2025 by Analice Coimbra Carneiro, Harry Zhu, João Pedro da Silva, Rafaela Florêncio Morais is licensed under Creative Commons Attribution 4.0 International.
+<a href="https://github.com/2025-1-MCC1">There is Monster In The Window</a> © 2025 by <a href="https://github.com/2025-1-MCC1">Analice Coimbra Carneiro, Harry Zhu, João Pedro da Silva, Rafaela Florêncio Morais</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>
+<br><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 
 ## 🎓 Referências
 
@@ -113,5 +114,5 @@ Aqui estão as referências usadas no projeto.
 4. <https://elbolilloduro.itch.io/exploration-objects/>
 5. <https://chooser-beta.creativecommons.org/>
 6. <https://freesound.org/>
-7. https://mixkit.co/
+7. <https://mixkit.co/>
 
