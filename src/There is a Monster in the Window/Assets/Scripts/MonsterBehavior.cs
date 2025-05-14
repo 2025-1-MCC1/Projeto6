@@ -22,7 +22,7 @@ public class MonsterBehavior : MonoBehaviour
     public GameObject interactUI;
 
     public AudioSource teleportAudio; //som do teleporte
-    public AudioSource hideAudio;    //som de quando aperta F
+    //public AudioSource hideAudio;    //som de quando aperta F
 
 
 
@@ -33,7 +33,7 @@ public class MonsterBehavior : MonoBehaviour
 
         
         teleportAudio = GetComponent<AudioSource>();
-        hideAudio = GetComponent<AudioSource>();
+        //hideAudio = GetComponent<AudioSource>();
       
 
         StartCoroutine(FirstTimeSpawn());
@@ -76,7 +76,7 @@ public class MonsterBehavior : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.F))
             {
-                hideAudio.Play();
+                //hideAudio.Play();
                 UIController.actionText = "";
                 UIController.commandText = "";
                 UIController.uiActive = false;

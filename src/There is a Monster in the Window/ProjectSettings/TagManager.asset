@@ -9,6 +9,7 @@ TagManager:
   - Monster
   - Light
   - sensor
+  - Monster2
   layers:
   - Default
   - TransparentFX
