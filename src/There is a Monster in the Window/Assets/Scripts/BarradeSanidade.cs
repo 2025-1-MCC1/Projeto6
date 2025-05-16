@@ -16,12 +16,6 @@ public class BarraDeSanidade : MonoBehaviour
 
     public Image frontHealthBar;
     public Image backHealthBar;
-    
-
-    // fatores da sanidade
-    public float monstroJanela = 20f;
-    public float faltaDeLuz = 15f;
-    public float ganhoSanidade = 5f;
 
     // controle dos fatores que alteram a sanidade
     private bool viuRadio = false;
@@ -39,6 +33,8 @@ public class BarraDeSanidade : MonoBehaviour
 
     void Update()
     {
+        AtualizarBarraInstantaneo(); 
+
         if (sanidadeAtual != lastSanidade)
         {
             lerpTimer += Time.deltaTime;
@@ -87,6 +83,7 @@ public class BarraDeSanidade : MonoBehaviour
         if (!viuRadio)
         {
             viuRadio = true;
+            Debug.Log("Viu o rádio: ");
             AlterarSanidade(-25);
         }
     }
@@ -108,13 +105,28 @@ public class BarraDeSanidade : MonoBehaviour
 
     void AlterarSanidade(int valor)
     {
-        sanidadeAtual = Mathf.Clamp(sanidadeAtual + valor, 0, sanidadeMaxima);
-        lerpTimer = 0f;  // reinicia o timer para animar a barra
+        sanidadeAtual += valor;
+        sanidadeAtual = Mathf.Clamp(sanidadeAtual, 0, sanidadeMaxima); // agora sim
+        lerpTimer = 0f; // reinicia o timer para animar a barra
+        AtualizarBarraInstantaneo();
     }
     void AtualizarBarraInstantaneo() // atualiza o visual da imagem para perda e ganho de sanidade
     {
-        frontHealthBar.fillAmount = sanidadeAtual / sanidadeMaxima;
-        backHealthBar.fillAmount = sanidadeAtual / sanidadeMaxima;
-        lastSanidade = sanidadeAtual;
+        float frenteFill = frontHealthBar.fillAmount;
+        float alvo = sanidadeAtual / sanidadeMaxima;
+
+        if (frenteFill < alvo)
+        {
+            frontHealthBar.fillAmount = Mathf.Lerp(frenteFill, alvo, Time.deltaTime * chipSpeed);
+            backHealthBar.fillAmount = alvo;
+            backHealthBar.color = Color.green;
+        }
+        else if (frenteFill > alvo)
+        {
+            frontHealthBar.fillAmount = alvo;
+            backHealthBar.fillAmount = Mathf.Lerp(backHealthBar.fillAmount, alvo, Time.deltaTime * chipSpeed);
+            backHealthBar.color = Color.red;
+        }
     }
+    
 }
