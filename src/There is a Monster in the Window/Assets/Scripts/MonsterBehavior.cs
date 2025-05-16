@@ -11,8 +11,8 @@ public class MonsterBehavior : MonoBehaviour
     public ItemSwitcher itemSwitcher;
     public Transform player;
 
-    public float timeDelay = 10f;
-    public float firstSpawn = 120f;
+    public float timeDelay = 40f;
+    public float firstSpawn = 240f;
 
     public float detectionDistance = 5f;
     private bool monsterHiding = true;

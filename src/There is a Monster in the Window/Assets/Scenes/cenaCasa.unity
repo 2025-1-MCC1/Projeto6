@@ -83582,8 +83582,8 @@ MonoBehaviour:
   dest5: {fileID: 1186425848}
   itemSwitcher: {fileID: 1634816148}
   player: {fileID: 8997996947118718363}
-  timeDelay: 2
-  firstSpawn: 10
+  timeDelay: 15
+  firstSpawn: 150
   detectionDistance: 5
   hideLocation: {x: 0, y: -1000, z: 0}
   interactUI: {fileID: 1654559268}
