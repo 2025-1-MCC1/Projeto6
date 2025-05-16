@@ -14,8 +14,8 @@ public class Timer : MonoBehaviour
     // Começa às 20:00 (20 * 60 = 1200 minutos)
     public float currentGameTimeInMinutes = 1200f;
 
-    // 1 hora do jogo = 150 segundos reais
-    const float realSecondsPerGameHour = 150f;
+    // 1 hora do jogo = 60 segundos reais
+    const float realSecondsPerGameHour = 60f;
 
     // Variável para armazenar o último minuto exibido
     int lastDisplayedMinute = 0;
@@ -25,7 +25,7 @@ public class Timer : MonoBehaviour
     void Update()
     {
 
-        // Converte deltaTime para horas do jogo (1h jogo = 150s reais)
+        // Converte deltaTime para horas do jogo (1h jogo = 60s reais)
         float gameHoursPassed = Time.deltaTime / realSecondsPerGameHour;
 
         // Adiciona ao tempo (convertendo horas para minutos)
