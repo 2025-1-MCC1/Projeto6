@@ -13,7 +13,8 @@ public class Radio : MonoBehaviour
     public float tempoEntreFalas = 1f;// Tempo entre cada fala completa
     public float typeDelay = 0.005f;// Tempo entre cada letra
     public Color corRadio = Color.green;
-    public Color corPlayer = Color.white;     
+    public Color corPlayer = Color.white;
+    public BarraDeSanidade barraSanidade;
 
     private bool dialogoIniciado = false;
     
@@ -31,6 +32,7 @@ public class Radio : MonoBehaviour
         if (other.CompareTag("Player") && !dialogoIniciado)
         {
             dialogoIniciado = true;
+            barraSanidade.VerRadio();
             StartCoroutine(ExecutarDialogo());
         }
     }
