@@ -28,6 +28,8 @@ public class MotionDetector : MonoBehaviour
             // Reproduz o som de alerta
             if (alertSound != null)
                 alertSound.Play();
+
+            Object.FindFirstObjectByType<BarraDeSanidade>()?.MonstroDetectado();
         }
     }
 

@@ -49,6 +49,8 @@ public class PowerEnergy : MonoBehaviour
 
                 powerOutage.Play();
 
+                FindObjectOfType<BarraDeSanidade>()?.GeradorQuebrou();
+
             }
         }
     }
@@ -241,6 +243,8 @@ public class PowerEnergy : MonoBehaviour
         LigarLuzes();
         Debug.Log("Gerador reparado!");
         powerBack.Play();
+
+        FindObjectOfType<BarraDeSanidade>()?.GeradorConsertado();
 
     }
 

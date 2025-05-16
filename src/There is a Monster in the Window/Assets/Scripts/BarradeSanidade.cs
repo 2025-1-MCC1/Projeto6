@@ -1,134 +1,120 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
-using System.Threading;
-using static UnityEngine.Rendering.DebugUI;
+using System.Collections;
+using System.Collections.Generic;
 
 public class BarraDeSanidade : MonoBehaviour
 {
     private float health;
     private float lerpTimer;// contador de tempo 
-    public float maxHealth = 100f; //máximo de sanidade do jogador
+    public float sanidadeMaxima = 100f; //máximo de sanidade do jogador
+    public float sanidadeAtual = 30; // começa o jogo com 30 de sanidade
     public float chipSpeed = 2f; // define quanto tempo (em segundos) deve demorar para completar a transição da barra
+    private float tempoParaRecuperar = 5f; // o jogador recupera de 5 em 5
+    private float tempoRecuperando = 0f;
+    private float lastSanidade = 30f;
+
     public Image frontHealthBar;
     public Image backHealthBar;
-    public TextMeshProUGUI healthText;
+    
 
     // fatores da sanidade
     public float monstroJanela = 20f;
-    public float barulhos = 6f;
     public float faltaDeLuz = 15f;
-    public float ganhoSanidade = 10f;
+    public float ganhoSanidade = 5f;
 
     // controle dos fatores que alteram a sanidade
-    private bool dentroDaCasa = false;
-    private float tempoVerificacao = 1f;
-    private float tempoAtual = 0f;
+    private bool viuRadio = false;
+    private bool detectouMonstro = false;
+    private bool geradorQuebrado = false;
 
-    // Referências aos objetos do jogo
-    public GameObject Criaturas;
-    public GameObject[] Ventanas; // janelas da casa
-    //public Light luzAmbiente; // a luz principal do ambiente, ainda nao feito
-    //public float intensidadeMinima = 0.2f; // abaixo disso considera "escuro"
-    //public bool somTocado = false; //ao escutar passos, barulho diminui a sanidade. colocar dps
 
     void Start()
     {
-        health = 30f; //inicia o jogo com 30 de sanidade por estar na rua
+        sanidadeAtual = 30f;
+        lastSanidade = sanidadeAtual;
+        AtualizarBarraInstantaneo();
     }
 
 
     void Update()
     {
-        health = Mathf.Clamp(health, 0, maxHealth); // sanidade inicial, mínima e máxima 
-        UpdateHealthUI();
-
-        if (dentroDaCasa)
+        if (sanidadeAtual != lastSanidade)
         {
-            tempoAtual += Time.deltaTime;
-            if (tempoAtual >= tempoVerificacao)
+            lerpTimer += Time.deltaTime;
+            float percentComplete = lerpTimer / chipSpeed;
+
+            backHealthBar.fillAmount = Mathf.Lerp(backHealthBar.fillAmount, sanidadeAtual / sanidadeMaxima, percentComplete);
+
+            if (lerpTimer >= chipSpeed)
             {
-                VerificarFatores();
-                tempoAtual = 0f;
+                frontHealthBar.fillAmount = sanidadeAtual / sanidadeMaxima;
+                lastSanidade = sanidadeAtual;
+                lerpTimer = 0f;
             }
         }
-    }
-    void VerificarFatores()
-    {
-        bool algoAfetando = false;
-
-        // Monstro na janela
-        if (Criaturas.activeInHierarchy && EstaNaJanela(Criaturas.transform.position))
+        // recupera sanidade se nada estiver acontecendo
+        if (!viuRadio && !detectouMonstro && !geradorQuebrado && sanidadeAtual < sanidadeMaxima)
         {
-            Debug.Log("Monstro está na janela: ");
-            TakeDamage(monstroJanela);
-            algoAfetando = true;
-        }
-
-        /* barulho
-        if (somTocado)
-        {
-            TakeDamage(barulhos);
-            somTocado = false; // reseta para não repetir até novo som
-            algoAfetando = true;
-        }*/
-
-        /* falta de luz
-        if (luzAmbiente != null && luzAmbiente.intensity < intensidadeMinima)
-        {
-            TakeDamage(faltaDeLuz);
-            algoAfetando = true;
-        }*/
-        if (!algoAfetando)
-        {
-            RestoreHealth(ganhoSanidade);
-        }
-
-    } 
-        bool EstaNaJanela(Vector3 posicaoCriaturas)
-        {
-            foreach (GameObject Ventanas in Ventanas)
+            tempoRecuperando += Time.deltaTime;
+            if (tempoRecuperando >= tempoParaRecuperar)
             {
-                if (Vector3.Distance(Ventanas.transform.position, posicaoCriaturas) < 2f) // ajusta o raio
-                    return true;
+                AlterarSanidade(5);
+                tempoRecuperando = 0f;
             }
-            return false;
         }
-    
-
-    public void EntrarNaCasa(bool status)
+        else
+        {
+            tempoRecuperando = 0f;
+        }
+    }
+    public void MonstroDetectado()
     {
-        dentroDaCasa = status;
-        if (status)
-            health = 50f;
+        detectouMonstro = true;
+        sanidadeAtual -= 20;
+        Debug.Log("Sanidade caiu por detectar o monstro. Valor atual: " + sanidadeAtual);
+        Invoke(nameof(ResetDetector), 3f); // reseta depois de 3 segundos
     }
 
-
-
-
-    public void UpdateHealthUI()
+    public void EntrarNaCasa() 
     {
-        //Debug.Log("Sanidade atual: " + health);
-
-        float hFraction = health / maxHealth;
-        frontHealthBar.fillAmount = hFraction;
-        backHealthBar.fillAmount = hFraction;
-
-
-        
-
-
+        sanidadeAtual = 50;
+        AtualizarBarraInstantaneo();
     }
 
-    public void TakeDamage(float damage) // dano na sanidade do jogador 
+    public void VerRadio() // o jogador perde sanidade
     {
-        Debug.Log("Perdeu Sanidade: " + damage);
-        health -= damage; // afeta a sanidade
-        lerpTimer = 0f;
+        if (!viuRadio)
+        {
+            viuRadio = true;
+            AlterarSanidade(-25);
+        }
     }
-    public void RestoreHealth(float healAmount) // para restaurar a sanidade 
+    public void GeradorQuebrou() // o jogador perde 15 de sanidade
     {
-        health += healAmount;
-        lerpTimer = 0f;
+        AlterarSanidade(-15);
+        geradorQuebrado = true;
     }
-  }
+
+    public void GeradorConsertado()
+    {
+        geradorQuebrado = false;
+    }
+
+    void ResetDetector()
+    {
+        detectouMonstro = false;
+    }
+
+    void AlterarSanidade(int valor)
+    {
+        sanidadeAtual = Mathf.Clamp(sanidadeAtual + valor, 0, sanidadeMaxima);
+        lerpTimer = 0f;  // reinicia o timer para animar a barra
+    }
+    void AtualizarBarraInstantaneo() // atualiza o visual da imagem para perda e ganho de sanidade
+    {
+        frontHealthBar.fillAmount = sanidadeAtual / sanidadeMaxima;
+        backHealthBar.fillAmount = sanidadeAtual / sanidadeMaxima;
+        lastSanidade = sanidadeAtual;
+    }
+}
