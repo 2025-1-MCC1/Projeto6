@@ -19453,9 +19453,12 @@ MonoBehaviour:
   RadioUI: {fileID: 1489372603}
   textoDialogo: {fileID: 426319964}
   falasRadio:
-  - Teste
+  - "Al\xF4?! Al\xF4?! Se tiver algu\xE9m a\xED, n\xF3s sa\xEDmos correndo porque
+    monstros quebraram o gerador de energia..."
+  - "Estamos na Rua Hollowpine, 98. Se tiver algu\xE9m a\xED, venha para c\xE1, por
+    favor!!!"
   falasJogador:
-  - Jogador falando
+  - Ah, lutei tanto essa madrugada que cai no sono...
   tempoEntreFalas: 1
   typeDelay: 0.005
   corRadio: {r: 0, g: 1, b: 0, a: 1}
@@ -19476,7 +19479,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

@@ -217,9 +217,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e191c0971b21dd49b9cabc18838aa37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CorredorUI: {fileID: 0}
+  CorredorUI: {fileID: 1053184379}
   textoCorredor: {fileID: 0}
-  falasCorredor: []
+  falasCorredor:
+  - Esse gerador parece quebrado, vai dar trabalho
   tempoEntreFalas: 1
   typeDelay: 0.01
   corJogador: {r: 1, g: 1, b: 1, a: 1}
@@ -4441,7 +4442,8 @@ MonoBehaviour:
   InicioUI: {fileID: 492519805}
   textoInicio: {fileID: 980824739}
   falasJogador:
-  - Finalmente!
+  - "Finalmente cheguei, Rua Ashcroft. Est\xE1 tudo t\xE3o escuro, cad\xEA minha
+    lanterna?"
   tempoEntreFalas: 1
   typeDelay: 0.005
   corJogador: {r: 1, g: 1, b: 1, a: 1}
@@ -4475,7 +4477,7 @@ Transform:
   m_GameObject: {fileID: 250148713}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.12, y: 2.81, z: -0.07}
+  m_LocalPosition: {x: -3.18, y: 0.13, z: 5.31}
   m_LocalScale: {x: 12.01011, y: 1.9306, z: 5.4239244}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19994,9 +19996,11 @@ MonoBehaviour:
   MonitorUI: {fileID: 615229091}
   textoMonitores: {fileID: 193390364}
   falasMonitor:
-  - bla
-  - bla
-  - bla
+  - "Esses monitores podem ser \xFAteis."
+  - E esse pequenininho? Vou levar comigo.
+  - Agora vamos ver como isso tudo funciona...
+  - "Parece que algu\xE9m realmente esteve aqui, deixaram instru\xE7\xF5es de sobreviv\xEAncia
+    nesses quadros."
   tempoEntreFalas: 1
   typeDelay: 0.01
   corJogador: {r: 1, g: 1, b: 1, a: 1}
@@ -27901,7 +27905,7 @@ MonoBehaviour:
   falasJogador: []
   tempoEntreFalas: 1
   typeDelay: 0.05
-  corRadio: {r: 0, g: 1, b: 0, a: 1}
+  corRadio: {r: 0.1251335, g: 0.7169812, b: 0.1251335, a: 1}
   corPlayer: {r: 1, g: 1, b: 1, a: 1}
   barraSanidade: {fileID: 1593266917}
 --- !u!65 &1422799457
@@ -29126,8 +29130,10 @@ MonoBehaviour:
   balaoUI: {fileID: 1884953844}
   textoTimer: {fileID: 949525806}
   falas:
-  - 02:30
-  - 04:00
+  - "Que situa\xE7\xE3o ruim, n\xE3o deviamos ter mexido com o que n\xE3o sabiamos.
+    Olha onde eu me meti..."
+  - "Deu quatro horas, estou sobrevivendo a noite. At\xE9 quando aguento? Uma hora
+    a comida acabar\xE1..."
   corTexto: {r: 1, g: 1, b: 1, a: 1}
   scriptDoTimer: {fileID: 717876861}
 --- !u!4 &1478898040
@@ -33503,8 +33509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   QuadroUI: {fileID: 1301656967}
   textoQuadros: {fileID: 579637125}
-  falasJogador:
-  - 
+  falasJogador: []
   tempoEntreFalas: 1
   typeDelay: 0.005
   corJogador: {r: 1, g: 1, b: 1, a: 1}
@@ -34020,7 +34025,7 @@ MonoBehaviour:
   JanelaUI: {fileID: 113527811}
   textoJanela: {fileID: 37275534}
   falasJanela:
-  - Tem algo estranho por aqui...
+  - "Esse lugar me d\xE1 calafrios, queria n\xE3o estar sozinho..."
   tempoEntreFalas: 1
   typeDelay: 0
   corFala: {r: 1, g: 1, b: 1, a: 1}
@@ -34054,7 +34059,7 @@ Transform:
   m_GameObject: {fileID: 1717363230}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.224, y: 4.079, z: -19.19}
+  m_LocalPosition: {x: -1.224, y: 3.974, z: -19.19}
   m_LocalScale: {x: 1, y: 1, z: 13.78323}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34984,7 +34989,7 @@ MonoBehaviour:
   EscadaUI: {fileID: 1635668158}
   textoEscada: {fileID: 144103334}
   falasJogador:
-  - "A escada.. deve ser por aqui ent\xE3o..."
+  - "Ser\xE1 que tem alguma coisa l\xE1 em cima?"
   tempoEntreFalas: 1
   typeDelay: 0.005
   corJogador: {r: 1, g: 1, b: 1, a: 1}
@@ -35018,8 +35023,8 @@ Transform:
   m_GameObject: {fileID: 1749251500}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.299, y: 1.257, z: -14.023}
-  m_LocalScale: {x: 1, y: 1, z: 2.3308}
+  m_LocalPosition: {x: -9.299, y: 1.158, z: -14.32}
+  m_LocalScale: {x: 1, y: 1, z: 1.8914108}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -38581,7 +38586,8 @@ MonoBehaviour:
   JanelaUI: {fileID: 1623648675}
   textoJanela: {fileID: 1831889051}
   falasJogador:
-  - 3212
+  - "Que casa esquisita, parece que est\xE1 morta sem toda a tecnologia que usavamos
+    antes do surto..."
   tempoEntreFalas: 1
   typeDelay: 0.005
   corJogador: {r: 1, g: 1, b: 1, a: 1}
@@ -38615,7 +38621,7 @@ Transform:
   m_GameObject: {fileID: 1942063932}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.638, y: 2.32, z: -11.904}
+  m_LocalPosition: {x: 2.861, y: 0.725, z: -11.904}
   m_LocalScale: {x: 4.649864, y: 1.6734556, z: 1.2645545}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -62036,13 +62042,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6738533095150951627}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.000000014901161, z: 0.97551787, w: -0.21992056}
-  m_LocalPosition: {x: -0.0052, y: 0.1746, z: -0.08690008}
+  m_LocalRotation: {x: -0, y: -0, z: 0.94156045, w: -0.3368441}
+  m_LocalPosition: {x: 0.0038, y: 0.1625, z: -0.10119997}
   m_LocalScale: {x: 0.40383986, y: 0.40383986, z: 0.4038399}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 533193074686351419}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -154.591}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -140.631}
 --- !u!23 &2937655892687610805
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -83263,7 +83269,7 @@ Transform:
   m_GameObject: {fileID: 2802089639614651319}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.000000014901159, z: 0.94976854, w: -0.31295332}
-  m_LocalPosition: {x: -0.0053, y: 0.1746, z: -0.078100085}
+  m_LocalPosition: {x: 0.0043, y: 0.1613, z: -0.0925}
   m_LocalScale: {x: 0.45314848, y: 0.45314848, z: 0.45314848}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87276,7 +87282,6 @@ GameObject:
   - component: {fileID: 1869478013661008677}
   - component: {fileID: 8965091264235138712}
   - component: {fileID: 8965091264235138714}
-  - component: {fileID: 8965091264235138715}
   m_Layer: 0
   m_Name: R.005
   m_TagString: Untagged
@@ -87402,10 +87407,8 @@ MonoBehaviour:
   - "V\xE1 para a Rua Ashcroft. Uma zona segura em meio ao caos, luz, alimenta\xE7\xE3o,
     sua sobreviv\xEAncia \xE9 nosso objetivo. V\xE1 para a Rua Ashcroft.."
   falasJogador:
-  - "Finalmente cheguei! Que escurid\xE3o, ser\xE1 que essa \xE9 a Rua Ashcroft mesmo?
-    T\xE1 tudo t\xE3o diferente..."
   - "N\xE3o acredito, \xE9 uma mensagem gravada?!"
-  - 'E agora? Eu estou sozinho...Preciso dar um jeito, vou ver essa casa '
+  - "\xC9 muito perigoso sair agora, vou ver o que encontro por aqui."
   tempoEntreFalas: 5
   typeDelay: 0.05
   corRadio: {r: 0, g: 1, b: 0, a: 1}
@@ -105672,27 +105675,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.031864785, y: 0.045552336, z: 0.019550454}
   m_Center: {x: -0.0059329285, y: -0.0010953582, z: 0.00022470439}
---- !u!114 &8965091264235138715
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6382865272366941495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62032953b83593841944580dc8f3a775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RadioUI: {fileID: 0}
-  textoDialogo: {fileID: 0}
-  falasRadio: []
-  falasJogador: []
-  tempoEntreFalas: 1
-  typeDelay: 0.005
-  corRadio: {r: 0, g: 1, b: 0, a: 1}
-  corPlayer: {r: 1, g: 1, b: 1, a: 1}
-  barraSanidade: {fileID: 0}
 --- !u!1 &8966072140096379441
 GameObject:
   m_ObjectHideFlags: 0
