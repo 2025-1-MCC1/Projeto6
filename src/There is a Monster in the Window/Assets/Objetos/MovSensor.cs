@@ -7,8 +7,8 @@ public class MovSensor : MonoBehaviour
     {
         if(PlayerCasting.distanceFromTarget < 1.9f)
         {
-            UIController.actionText = "Pick up Mov. Sensor";
-            UIController.commandText = "[E] Pick up";
+            UIController.actionText = "Pegar Sensor de Mov.";
+            UIController.commandText = "[E] Pegar";
             UIController.uiActive = true;
         }
         

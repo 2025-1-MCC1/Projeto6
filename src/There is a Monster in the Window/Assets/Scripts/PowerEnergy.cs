@@ -60,8 +60,8 @@ public class PowerEnergy : MonoBehaviour
         float distancia = Vector3.Distance(Jogador.position, transform.position); //para calcular a distancia que o player está do gerador
         if (geradorQuebrado && distancia <= distanciaParaSegurar)
         {
-            UIController.actionText = "Hold 10 Seconds";
-            UIController.commandText = "[E] Hold";
+            UIController.actionText = "Segure por 10 segundos";
+            UIController.commandText = "[E] Segure";
             UIController.uiActive = true;
 
             if (Input.GetKey(KeyCode.E))
@@ -69,7 +69,7 @@ public class PowerEnergy : MonoBehaviour
 
                 tempoSegurando += Time.deltaTime; //conta quantos segundos o tempo segurando est� subindo, de acordo com os frames (Deltatime)
                 Debug.Log("Tempo acumulado: " + tempoSegurando.ToString("F2") + " / " + tempoParaReparo);
-                UIController.actionText = "Fixing: " + tempoSegurando.ToString("F2") + " / " + tempoParaReparo;
+                UIController.actionText = "Consertando: " + tempoSegurando.ToString("F2") + " / " + tempoParaReparo;
 
                 powerBuzzing.Play();
 

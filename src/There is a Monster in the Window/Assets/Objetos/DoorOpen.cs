@@ -35,8 +35,8 @@ public class DoorOpen : MonoBehaviour
          if (other.gameObject.CompareTag("Player"))
         {
             colliding = true;
-            UIController.actionText = "Open Door";
-            UIController.commandText = "[E] Open";
+            UIController.actionText = "Abrir porta";
+            UIController.commandText = "[E] Abrir";
             UIController.uiActive = true;
         }
     }

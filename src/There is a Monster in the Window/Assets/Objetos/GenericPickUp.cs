@@ -6,8 +6,8 @@ public class GenericPickUp : MonoBehaviour
     {
         if (PlayerCasting.distanceFromTarget < 1.9f)
         {
-            UIController.actionText = "Pick up";
-            UIController.commandText = "[E] Pick up";
+            UIController.actionText = "Pegar Objeto";
+            UIController.commandText = "[E] Pegar";
             UIController.uiActive = true;
         }
 

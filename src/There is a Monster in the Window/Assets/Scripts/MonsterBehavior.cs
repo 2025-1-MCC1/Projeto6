@@ -71,8 +71,8 @@ public class MonsterBehavior : MonoBehaviour
         if (itemSwitcher.activeItem == 1 && Vector3.Distance(transform.position, player.position) < detectionDistance)
         {
             UIController.uiActive = true;
-            UIController.actionText = "Activate spiritbox";
-            UIController.commandText = "[F] Activate";
+            UIController.actionText = "Ativar caixa";
+            UIController.commandText = "[F] Ativar";
 
             if (Input.GetKeyDown(KeyCode.F))
             {
