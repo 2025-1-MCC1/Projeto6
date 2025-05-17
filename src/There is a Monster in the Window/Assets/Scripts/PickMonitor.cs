@@ -29,8 +29,8 @@ public class PickMonitor : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             colliding = true;
-            UIController.actionText = "Pick Up Monitor";
-            UIController.commandText = "[E] Pick Up";
+            UIController.actionText = "Pegar Monitor";
+            UIController.commandText = "[E] Pegar";
             UIController.uiActive = true;
         }
     }

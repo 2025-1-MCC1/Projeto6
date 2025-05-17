@@ -152,7 +152,7 @@ public class BarraDeSanidade : MonoBehaviour
     {
         if (geradorQuebrado && valor > 0) return;
         sanidadeAtual += valor;
-        sanidadeAtual = Mathf.Clamp(sanidadeAtual, 0, sanidadeMaxima); 
+        sanidadeAtual = Mathf.Clamp(sanidadeAtual, 0, sanidadeMaxima);
         lerpTimer = 0f; // reinicia o timer para animar a barra
     }
     void AtualizarBarraInstantaneo() // atualiza o visual da imagem para perda e ganho de sanidade

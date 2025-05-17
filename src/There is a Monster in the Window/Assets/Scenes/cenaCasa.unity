@@ -177,12 +177,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1204088}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -14.68, y: 1.81, z: -21.4}
   m_LocalScale: {x: 2.5317454, y: 3.1425207, z: 2.4136102}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1204090
 BoxCollider:
@@ -203,8 +203,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.495131, y: 0.9999998, z: 1}
+  m_Center: {x: 0.74756545, y: 0, z: 0}
 --- !u!114 &1204091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,11 +218,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CorredorUI: {fileID: 1053184379}
-  textoCorredor: {fileID: 0}
+  textoCorredor: {fileID: 557189420}
   falasCorredor:
   - Esse gerador parece quebrado, vai dar trabalho
-  tempoEntreFalas: 1
-  typeDelay: 0.01
+  tempoEntreFalas: 1.5
+  typeDelay: 0.02
   corJogador: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &2217656
 GameObject:
@@ -1500,7 +1500,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76732309}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -11.217, y: 0.597, z: -8.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1509,7 +1509,7 @@ Transform:
   - {fileID: 1387401336846958348}
   - {fileID: 6430867755537395200}
   - {fileID: 599036753}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &89396279
 GameObject:
@@ -2177,13 +2177,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 113527811}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1121716755}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4518,7 +4518,7 @@ MonoBehaviour:
   - "Finalmente cheguei, Rua Ashcroft. Est\xE1 tudo t\xE3o escuro, cad\xEA minha
     lanterna?"
   tempoEntreFalas: 1
-  typeDelay: 0.005
+  typeDelay: 0.02
   corJogador: {r: 1, g: 1, b: 1, a: 1}
 --- !u!65 &250148715
 BoxCollider:
@@ -4549,12 +4549,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250148713}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -3.18, y: 0.13, z: 5.31}
   m_LocalScale: {x: 12.01011, y: 1.9306, z: 5.4239244}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &250595878
 GameObject:
@@ -9287,14 +9287,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492519805}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1905199632}
   - {fileID: 980824738}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -12687,13 +12687,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615229091}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1134684688}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -20079,8 +20079,8 @@ MonoBehaviour:
   - Agora vamos ver como isso tudo funciona...
   - "Parece que algu\xE9m realmente esteve aqui, deixaram instru\xE7\xF5es de sobreviv\xEAncia
     nesses quadros."
-  tempoEntreFalas: 1
-  typeDelay: 0.01
+  tempoEntreFalas: 1.5
+  typeDelay: 0.02
   corJogador: {r: 1, g: 1, b: 1, a: 1}
 --- !u!65 &977715816
 BoxCollider:
@@ -20111,12 +20111,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977715814}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -5.7908, y: 4.49, z: -18.781}
   m_LocalScale: {x: 2.0509, y: 2.2098432, z: 5.0694}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &980824737
 GameObject:
@@ -21783,13 +21783,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053184379}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 206801409}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -22081,13 +22081,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064381220}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 337869062}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -26060,7 +26060,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301656967}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
@@ -26068,7 +26068,7 @@ RectTransform:
   - {fileID: 75356590}
   - {fileID: 1234460152}
   - {fileID: 579637124}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -27980,9 +27980,11 @@ MonoBehaviour:
   falasRadio:
   - "V\xE1 para a Rua Ashcroft. Uma zona segura em meio ao caos, luz, alimenta\xE7\xE3o,
     sua sobreviv\xEAncia \xE9 nosso objetivo. V\xE1 para a Rua Ashcroft.."
-  falasJogador: []
-  tempoEntreFalas: 1
-  typeDelay: 0.05
+  falasJogador:
+  - "N\xE3o acredito, \xE9 uma mensagem gravada?!"
+  - "\xC9 muito perigoso sair agora, vou ver o que encontro por aqui."
+  tempoEntreFalas: 1.5
+  typeDelay: 0.02
   corRadio: {r: 0.1251335, g: 0.7169812, b: 0.1251335, a: 1}
   corPlayer: {r: 1, g: 1, b: 1, a: 1}
   barraSanidade: {fileID: 1593266917}
@@ -29222,12 +29224,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1478898038}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.0631204, y: 4.0736575, z: -15.74763}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1489694247
 GameObject:
@@ -32293,7 +32295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sanidadeMaxima: 100
-  sanidadeAtual: 30
+  sanidadeAtual: 0
   chipSpeed: 2
   corAlta: {r: 0, g: 1, b: 0, a: 1}
   corMedia: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
@@ -32694,13 +32696,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623648675}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 614331902}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -33016,13 +33018,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635668158}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2066424280}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -33588,8 +33590,8 @@ MonoBehaviour:
   QuadroUI: {fileID: 1301656967}
   textoQuadros: {fileID: 579637125}
   falasJogador: []
-  tempoEntreFalas: 1
-  typeDelay: 0.005
+  tempoEntreFalas: 1.5
+  typeDelay: 0.02
   corJogador: {r: 1, g: 1, b: 1, a: 1}
 --- !u!65 &1680108842
 BoxCollider:
@@ -33620,12 +33622,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680108840}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 774.5896, y: 486.40424, z: 35.67444}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1685840994
 GameObject:
@@ -33831,6 +33833,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691348698}
   m_Mesh: {fileID: -4826929447448276505, guid: dfd145c649331a44ea8d9fee4e73a6a9, type: 3}
+--- !u!1 &1692618544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1692618545}
+  m_Layer: 0
+  m_Name: Falas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1692618545
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692618544}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 76732310}
+  - {fileID: 1064381224}
+  - {fileID: 1749251503}
+  - {fileID: 1635668162}
+  - {fileID: 1717363233}
+  - {fileID: 113527815}
+  - {fileID: 977715817}
+  - {fileID: 615229095}
+  - {fileID: 1680108843}
+  - {fileID: 1301656971}
+  - {fileID: 1478898040}
+  - {fileID: 1884953848}
+  - {fileID: 1204089}
+  - {fileID: 1053184383}
+  - {fileID: 250148716}
+  - {fileID: 492519809}
+  - {fileID: 1942063935}
+  - {fileID: 1623648679}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1694322744
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -34104,8 +34155,8 @@ MonoBehaviour:
   textoJanela: {fileID: 37275534}
   falasJanela:
   - "Esse lugar me d\xE1 calafrios, queria n\xE3o estar sozinho..."
-  tempoEntreFalas: 1
-  typeDelay: 0
+  tempoEntreFalas: 1.5
+  typeDelay: 0.02
   corFala: {r: 1, g: 1, b: 1, a: 1}
 --- !u!65 &1717363232
 BoxCollider:
@@ -34136,12 +34187,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717363230}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.224, y: 3.974, z: -19.19}
   m_LocalScale: {x: 1, y: 1, z: 13.78323}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1717902040
 GameObject:
@@ -35068,8 +35119,8 @@ MonoBehaviour:
   textoEscada: {fileID: 144103334}
   falasJogador:
   - "Ser\xE1 que tem alguma coisa l\xE1 em cima?"
-  tempoEntreFalas: 1
-  typeDelay: 0.005
+  tempoEntreFalas: 1.5
+  typeDelay: 0.02
   corJogador: {r: 1, g: 1, b: 1, a: 1}
 --- !u!65 &1749251502
 BoxCollider:
@@ -35100,12 +35151,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1749251500}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -9.299, y: 1.158, z: -14.32}
   m_LocalScale: {x: 1, y: 1, z: 1.8914108}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1752193161
 PrefabInstance:
@@ -37105,13 +37156,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1884953844}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2017148730}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -38666,8 +38717,8 @@ MonoBehaviour:
   falasJogador:
   - "Que casa esquisita, parece que est\xE1 morta sem toda a tecnologia que usavamos
     antes do surto..."
-  tempoEntreFalas: 1
-  typeDelay: 0.005
+  tempoEntreFalas: 1.5
+  typeDelay: 0.02
   corJogador: {r: 1, g: 1, b: 1, a: 1}
 --- !u!65 &1942063934
 BoxCollider:
@@ -38698,12 +38749,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942063932}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.861, y: 0.725, z: -11.904}
   m_LocalScale: {x: 4.649864, y: 1.6734556, z: 1.2645545}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1692618545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1951458670
 GameObject:
@@ -41018,7 +41069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sanidadeMaxima: 100
-  sanidadeAtual: 30
+  sanidadeAtual: 0
   chipSpeed: 2
   corAlta: {r: 0, g: 1, b: 0, a: 1}
   corMedia: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
@@ -83666,8 +83717,8 @@ MonoBehaviour:
   dest5: {fileID: 1186425848}
   itemSwitcher: {fileID: 1634816148}
   player: {fileID: 8997996947118718363}
-  timeDelay: 15
-  firstSpawn: 150
+  timeDelay: 25
+  firstSpawn: 120
   detectionDistance: 5
   hideLocation: {x: 0, y: -1000, z: 0}
   interactUI: {fileID: 1654559268}
@@ -87474,7 +87525,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3525387580669622066}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62032953b83593841944580dc8f3a775, type: 3}
   m_Name: 
@@ -87487,7 +87538,7 @@ MonoBehaviour:
   falasJogador:
   - "N\xE3o acredito, \xE9 uma mensagem gravada?!"
   - "\xC9 muito perigoso sair agora, vou ver o que encontro por aqui."
-  tempoEntreFalas: 5
+  tempoEntreFalas: 1.5
   typeDelay: 0.05
   corRadio: {r: 0, g: 1, b: 0, a: 1}
   corPlayer: {r: 1, g: 1, b: 1, a: 1}
@@ -107375,22 +107426,5 @@ SceneRoots:
   - {fileID: 678423118}
   - {fileID: 1813548519}
   - {fileID: 917048090}
-  - {fileID: 76732310}
-  - {fileID: 1064381224}
-  - {fileID: 1749251503}
-  - {fileID: 1635668162}
-  - {fileID: 1717363233}
-  - {fileID: 113527815}
-  - {fileID: 977715817}
-  - {fileID: 615229095}
-  - {fileID: 1680108843}
-  - {fileID: 1301656971}
-  - {fileID: 1478898040}
-  - {fileID: 1884953848}
-  - {fileID: 1204089}
-  - {fileID: 1053184383}
-  - {fileID: 250148716}
-  - {fileID: 492519809}
-  - {fileID: 1942063935}
-  - {fileID: 1623648679}
+  - {fileID: 1692618545}
   - {fileID: 1593266918}

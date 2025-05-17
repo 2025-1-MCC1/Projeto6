@@ -19430,7 +19430,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1267730515}
   - component: {fileID: 1267730514}
-  - component: {fileID: 1267730513}
+  - component: {fileID: 1267730516}
   m_Layer: 0
   m_Name: RadioTrigger
   m_TagString: Untagged
@@ -19438,32 +19438,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1267730513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1267730512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62032953b83593841944580dc8f3a775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  RadioUI: {fileID: 1489372603}
-  textoDialogo: {fileID: 426319964}
-  falasRadio:
-  - "Al\xF4?! Al\xF4?! Se tiver algu\xE9m a\xED, n\xF3s sa\xEDmos correndo porque
-    monstros quebraram o gerador de energia..."
-  - "Estamos na Rua Hollowpine, 98. Se tiver algu\xE9m a\xED, venha para c\xE1, por
-    favor!!!"
-  falasJogador:
-  - Ah, lutei tanto essa madrugada que cai no sono...
-  tempoEntreFalas: 1
-  typeDelay: 0.005
-  corRadio: {r: 0, g: 1, b: 0, a: 1}
-  corPlayer: {r: 1, g: 1, b: 1, a: 1}
-  barraSanidade: {fileID: 0}
 --- !u!65 &1267730514
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19483,8 +19457,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.8253736, y: 1, z: 1.9912901}
+  m_Center: {x: -0.087313354, y: 0, z: -0.4956449}
 --- !u!4 &1267730515
 Transform:
   m_ObjectHideFlags: 0
@@ -19500,6 +19474,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1267730516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267730512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6c96829fb3c0e34ebd78c88745a4838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RadioUI: {fileID: 1489372603}
+  textoDialogo: {fileID: 426319964}
+  falasRadio:
+  - "Al\xF4?! Al\xF4?! Se tiver algu\xE9m a\xED, n\xF3s sa\xEDmos correndo porque
+    monstros quebraram o gerador de energia..."
+  - "Estamos na Rua Hollowpine, 98. Se tiver algu\xE9m a\xED, venha para c\xE1, por
+    favor!!!"
+  falasJogador:
+  - Ah, lutei tanto essa madrugada que cai no sono...
+  - "Realmente existem sobreviventes? Est\xE1 na hora de sair daqui e procur\xE1-los"
+  tempoEntreFalas: 1.5
+  typeDelay: 0.02
+  corRadio: {r: 0, g: 1, b: 0, a: 1}
+  corPlayer: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1268211039
 GameObject:
   m_ObjectHideFlags: 0
