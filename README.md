@@ -35,6 +35,8 @@
 <pre>
 ├── Raiz
 │
+├── Executável
+│ 
 ├── Documentos
 │   ├── entrega 1
 │   │   ├── entrega Cálculo 1
