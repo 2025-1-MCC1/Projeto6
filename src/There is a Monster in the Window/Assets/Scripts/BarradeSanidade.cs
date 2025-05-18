@@ -13,7 +13,7 @@ public class BarraDeSanidade : MonoBehaviour
 
     public Image backHealthBar; 
 
-    [SerializeField] private float sanidadeAtual = 70f;
+    [SerializeField] private float sanidadeAtual = 45;
     private float lerpTimer; 
     private float lastSanidade = 30f; 
 
@@ -29,7 +29,7 @@ public class BarraDeSanidade : MonoBehaviour
 
     void Awake()
     {
-      
+        this.enabled = false;
         lastSanidade = sanidadeAtual;
       
         backHealthBar.fillAmount = sanidadeAtual / sanidadeMaxima;
@@ -37,15 +37,14 @@ public class BarraDeSanidade : MonoBehaviour
         backHealthBar.color = Color.red;
     
 
-        lerpTimer = 0f; 
+        lerpTimer = 0f;
 
-      
     }
 
     
     void Start()
     {
-        
+        Debug.Log("Script BarraDeSanidade HABILITADO ");
     }
 
     void Update()
@@ -124,6 +123,6 @@ public class BarraDeSanidade : MonoBehaviour
     
     }
 
-   
+
 
 }

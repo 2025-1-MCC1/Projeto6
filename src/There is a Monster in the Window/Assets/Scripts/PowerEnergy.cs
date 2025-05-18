@@ -7,20 +7,23 @@ public class PowerEnergy : MonoBehaviour
     public float vidaGerador = 90f; //vida do gerador, acaba em 90 seg da vida real (1min e meio)
     public float tempoSegurando = 0f; //quantos segundos o jogador EST� segurando a tecla, aumenta essa vari�vel 
     public float tempoParaReparo = 10f; //tempo em segundos que o jogador deve segurar a tecla E para valer 
+
     GameObject[] precisaLuz; //ARRAY para guardar QUAIS s�o os objetos que tem a tag que especifiquei (lights), dentro disso fica as luzes, as cameras de seguran�a e os sensores 
     GameObject[] sensores;
+
+    public BarraDeSanidade barraSanidade;
+
     public bool geradorQuebrado = false; //essa vari�vel serve para sabermos que o gerador J� QUEBROU, para n�o desligar as luzes toda hora
  
+
     public Transform Jogador; //lugar do player na cena, serve para ver se o jogador est� perto do fusivel
     public float distanciaParaSegurar = 1.5f; //distancia necess�ria para o jogador estar do fusivel
 
     private Dictionary<Camera, RenderTexture> cameraTextures = new Dictionary<Camera, RenderTexture>(); //dicionario para guardar o valor das cameras e a render texture delas
 
     public AudioSource powerBuzzing; //som de segurando E
-
     public AudioSource powerOutage; //som de queda de energia
-
-    public AudioSource powerBack;   //som de energia voltando
+    public AudioSource powerBack;   //som de energia voltando
 
     void Start()
     {
@@ -31,8 +34,10 @@ public class PowerEnergy : MonoBehaviour
     }
 
     // Aqui farei o gerador de energia quebrar quando a vida dele chegar no 0f, as luzes cairem e a fun��o de apertar para consertar
-    void Update()
+  
+        void Update()
     {
+
         //Vida do Gerador cair, e as luzes apagarem
 
         if (!geradorQuebrado) //se o gerador NAO estiver quebrado, a vida diminui com os frames
@@ -54,6 +59,7 @@ public class PowerEnergy : MonoBehaviour
             }
         }
     }
+        
 
     private void OnMouseOver()
     {
@@ -243,11 +249,13 @@ public class PowerEnergy : MonoBehaviour
         LigarLuzes();
         Debug.Log("Gerador reparado!");
         powerBack.Play();
+        barraSanidade.enabled = true;
 
         //FindObjectOfType<BarraDeSanidade>()?.GeradorConsertado();
 
     }
 
+  
 }
 
 //set active para as luzes
