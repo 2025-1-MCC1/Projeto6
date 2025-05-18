@@ -8,7 +8,7 @@
 
 ## Nebula Lab
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Analice Coimbra Carneiro</a>, <a href="https://www.linkedin.com/in/victorbarq/">Harry Zhu</a>, <a href="https://www.linkedin.com/in/victorbarq/">João Pedro Da Silva</a>, <a href="https://www.linkedin.com/in/victorbarq/">Rafaela Florêncio Morais</a>
+## Integrantes: <a href="https://github.com/AnaliceCoimbra/">Analice Coimbra Carneiro</a>, <a href="https://github.com/harryzuh">Harry Zhu</a>, <a href="https://github.com/DebatingAlpaca">João Pedro Da Silva</a>, <a href="https://github.com/rafafmorais">Rafaela Florêncio Morais</a>
 
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/adriano-valente-534576135/"> Adriano Felix Valente </a>, <a href="https://www.linkedin.com/in/remuniz/"> Renata Muniz do Nascimento </a>, <a href="https://www.linkedin.com/in/lutydes/">Luis Fernando dos Santos Pires</a>, <a href="https://www.linkedin.com/in/victorbarq/"> Victor Bruno Alexander Rosetti de Quiroz </a>, <a href="https://www.linkedin.com/in/victorbarq/">Joyce Daniele Tavares</a>
 
