@@ -157,12 +157,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Replay
-
-'
+  m_text: Try Again
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c05499e6e855821429d873e1e2eb1e15, type: 2}
+  m_sharedMaterial: {fileID: -2607337560760612360, guid: c05499e6e855821429d873e1e2eb1e15, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -192,7 +190,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -254,8 +252,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6.4, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 6.4000015, y: -2.75}
+  m_SizeDelta: {x: 0, y: -5.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &588023031
 GameObject:
@@ -632,7 +630,6 @@ GameObject:
   - component: {fileID: 1063847299}
   - component: {fileID: 1063847298}
   - component: {fileID: 1063847297}
-  - component: {fileID: 1063847296}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -660,18 +657,6 @@ RectTransform:
   m_AnchoredPosition: {x: 11, y: -269}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1063847296
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1063847294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 621ef819ee6a7e74a85196ab22957206, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1063847297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -716,7 +701,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1063847296}
+      - m_Target: {fileID: 2093628600}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: BackToMenu
         m_Mode: 1
@@ -778,9 +763,8 @@ GameObject:
   - component: {fileID: 1145078296}
   - component: {fileID: 1145078295}
   - component: {fileID: 1145078294}
-  - component: {fileID: 1145078293}
   m_Layer: 5
-  m_Name: Replay
+  m_Name: retry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -804,20 +788,8 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 11, y: -138}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 170.1, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1145078293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1145078291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cad97310f248aaa4ab76ae26bd5bd9d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1145078294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -862,7 +834,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1145078293}
+      - m_Target: {fileID: 2093628601}
         m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
         m_MethodName: Startgame
         m_Mode: 1
@@ -1067,8 +1039,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6.4, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 6.4000015, y: -2.9200006}
+  m_SizeDelta: {x: 0, y: -5.839999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1749937837
 MonoBehaviour:
@@ -1092,8 +1064,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Menu
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c05499e6e855821429d873e1e2eb1e15, type: 2}
+  m_sharedMaterial: {fileID: -2607337560760612360, guid: c05499e6e855821429d873e1e2eb1e15, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1123,7 +1095,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -1307,7 +1279,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -498, y: 140}
+  m_AnchoredPosition: {x: -498, y: 285.6}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1804344570
@@ -1330,10 +1302,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Game Over: Voc\xEA morreu!"
+  m_text: 'Game Over
+
+
+    Voce morreu!'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c05499e6e855821429d873e1e2eb1e15, type: 2}
+  m_sharedMaterial: {fileID: -2607337560760612360, guid: c05499e6e855821429d873e1e2eb1e15, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1363,8 +1338,8 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
-  m_HorizontalAlignment: 1
+  m_fontStyle: 3
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1603,6 +1578,8 @@ GameObject:
   - component: {fileID: 2093628599}
   - component: {fileID: 2093628598}
   - component: {fileID: 2093628597}
+  - component: {fileID: 2093628601}
+  - component: {fileID: 2093628600}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1671,6 +1648,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2093628600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093628596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 621ef819ee6a7e74a85196ab22957206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2093628601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093628596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cad97310f248aaa4ab76ae26bd5bd9d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

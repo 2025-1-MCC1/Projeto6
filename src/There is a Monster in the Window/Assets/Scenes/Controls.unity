@@ -1014,10 +1014,12 @@ MonoBehaviour:
 
     F - Ligar/desligar lanterna
 
-    Num 1 - Alternar lanterna
+    ESC - menu
 
-    Num
-    2 - Alternar controle'
+    Num 1 -
+    Alternar lanterna
+
+    Num 2 - Alternar controle'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c05499e6e855821429d873e1e2eb1e15, type: 2}
   m_sharedMaterial: {fileID: -2607337560760612360, guid: c05499e6e855821429d873e1e2eb1e15, type: 2}
@@ -1050,7 +1052,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 2
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1082,7 +1084,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 3.8353233, y: -0.6624081, z: 1.8692522, w: -2.4611998}
+  m_margin: {x: 3.8353233, y: -0.94494367, z: 1.8692522, w: -2.4611998}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -1144,7 +1146,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1803433124}
   m_LocalRotation: {x: 0.49587655, y: -0.5040897, z: -0.5040897, w: 0.49587655}
-  m_LocalPosition: {x: 0, y: 0, z: 0.00255}
+  m_LocalPosition: {x: 0, y: 0, z: 0.003}
   m_LocalScale: {x: 0.0010999996, y: 0.0010999994, z: 0.0010999992}
   m_ConstrainProportionsScale: 1
   m_Children: []

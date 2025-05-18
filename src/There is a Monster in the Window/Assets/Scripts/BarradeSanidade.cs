@@ -13,7 +13,7 @@ public class BarraDeSanidade : MonoBehaviour
 
     public Image backHealthBar; 
 
-    [SerializeField] private float sanidadeAtual = 50;
+    [SerializeField] private float sanidadeAtual = 70f;
     private float lerpTimer; 
     private float lastSanidade = 30f; 
 

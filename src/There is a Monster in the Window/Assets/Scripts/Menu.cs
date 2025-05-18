@@ -28,6 +28,10 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
-
+    public void QuitGame()
+    {
+        Debug.Log("Quitting game...");
+        Application.Quit();
+    }
 
 }
