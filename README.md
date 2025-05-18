@@ -8,7 +8,7 @@
 
 ## Nebula Lab
 
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Analice Coimbra Carneiro</a>, <a href="https://www.linkedin.com/in/victorbarq/">Harry Zhu</a>, <a href="https://www.linkedin.com/in/victorbarq/">João Pedro Da Silva</a>, <a href="https://www.linkedin.com/in/victorbarq/">Rafaela Florêncio Morais</a>
+## Integrantes: <a href="https://github.com/AnaliceCoimbra/">Analice Coimbra Carneiro</a>, <a href="https://github.com/harryzuh">Harry Zhu</a>, <a href="https://github.com/DebatingAlpaca">João Pedro Da Silva</a>, <a href="https://github.com/rafafmorais">Rafaela Florêncio Morais</a>
 
 ## Professores Orientadores: <a href="https://www.linkedin.com/in/adriano-valente-534576135/"> Adriano Felix Valente </a>, <a href="https://www.linkedin.com/in/remuniz/"> Renata Muniz do Nascimento </a>, <a href="https://www.linkedin.com/in/lutydes/">Luis Fernando dos Santos Pires</a>, <a href="https://www.linkedin.com/in/victorbarq/"> Victor Bruno Alexander Rosetti de Quiroz </a>, <a href="https://www.linkedin.com/in/victorbarq/">Joyce Daniele Tavares</a>
 
@@ -25,7 +25,7 @@
 
 
 <p>
-  O jogo There is a Monster in the Window é um projeto interdisciplinar desenvolvido por alunos do curso de Ciência da Computação da FECAP. Combinando áreas como programação, lógica, matemática aplicada e design de jogos, o projeto busca não apenas proporcionar uma experiência envolvente de terror, mas também explorar, de forma criativa, os conceitos de casas e cidades inteligentes. A proposta central é fazer o jogador sobreviver das 20:00 até as 6:00 da manhã utilizando recursos tecnológicos — como sensores de movimento e câmeras de vigilância — para detectar e evitar uma entidade misteriosa que ronda os cômodos da casa.
+  O jogo There is a Monster in the Window é um projeto interdisciplinar desenvolvido por alunos do curso de Ciência da Computação da FECAP. Combinando áreas como programação, lógica, matemática aplicada e design de jogos, o projeto busca não apenas proporcionar uma experiência envolvente de terror, mas também explorar, de forma criativa, os conceitos de casas e cidades inteligentes. A proposta central é fazer o jogador sobreviver das 22:00 até as 6:00 da manhã utilizando recursos tecnológicos — como sensores de movimento e câmeras de vigilância — para detectar e evitar uma entidade misteriosa que ronda os cômodos da casa.
 
   A ambientação do jogo se inspira na estética dos clássicos de PS1, com visual retrô e atmosfera opressiva. O jogo transforma um ambiente inteligente em um campo de tensão constante, onde o jogador precisa tomar decisões estratégicas sobre onde posicionar seus dispositivos de vigilância. Ao aplicar conceitos reais de automação residencial, detecção por proximidade, gerenciamento de recursos limitados e sistemas temporais dinâmicos, o jogo representa uma fusão entre entretenimento e tecnologia aplicada, convidando o jogador a pensar sobre o papel da tecnologia em ambientes residenciais modernos.
 </p>
