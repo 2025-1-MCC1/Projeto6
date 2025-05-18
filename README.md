@@ -36,7 +36,7 @@
 ├── Raiz
 │
 ├── Executável
-│  ├── README.md
+│   └── README.md
 │ 
 ├── Documentos
 │   ├── entrega 1
@@ -89,7 +89,8 @@ Há também 5 pastas que seguem da seguinte forma:
 <b>Windows:</b>
 
 Não há instalação! Apenas executável!
-Encontre o There_is_a_Monster_in_the_Window.exe na pasta Executável e execute-o como qualquer outro programa.
+Encontre a pasta Executável e clique no link do itch.io para jogar no navegador.
+Na página do itch.io também há uma opção para baixar o arquivo .exe do jogo.
 
 
 
