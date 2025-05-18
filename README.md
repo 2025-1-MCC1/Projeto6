@@ -36,6 +36,7 @@
 ├── Raiz
 │
 ├── Executável
+│  ├── README.md
 │ 
 ├── Documentos
 │   ├── entrega 1
