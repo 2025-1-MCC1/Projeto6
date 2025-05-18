@@ -10,12 +10,10 @@ public class PowerEnergy : MonoBehaviour
 
     GameObject[] precisaLuz; //ARRAY para guardar QUAIS s�o os objetos que tem a tag que especifiquei (lights), dentro disso fica as luzes, as cameras de seguran�a e os sensores 
     GameObject[] sensores;
-
     public BarraDeSanidade barraSanidade;
 
     public bool geradorQuebrado = false; //essa vari�vel serve para sabermos que o gerador J� QUEBROU, para n�o desligar as luzes toda hora
  
-
     public Transform Jogador; //lugar do player na cena, serve para ver se o jogador est� perto do fusivel
     public float distanciaParaSegurar = 1.5f; //distancia necess�ria para o jogador estar do fusivel
 
