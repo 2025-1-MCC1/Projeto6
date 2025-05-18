@@ -32,7 +32,7 @@ public class Radio : MonoBehaviour
         if (other.CompareTag("Player") && !dialogoIniciado)
         {
             dialogoIniciado = true;
-            barraSanidade.VerRadio();
+            //barraSanidade.VerRadio();
             StartCoroutine(ExecutarDialogo());
         }
     }

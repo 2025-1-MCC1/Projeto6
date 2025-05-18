@@ -15,7 +15,7 @@ public class MonsterBehavior : MonoBehaviour
     public float firstSpawn = 240f;
 
     public float detectionDistance = 5f;
-    private bool monsterHiding = true;
+    public bool monsterHiding = true;
 
     public Vector3 hideLocation = new Vector3(0, -1000, 0);
 
