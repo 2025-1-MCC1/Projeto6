@@ -122,5 +122,5 @@ Aqui estão as referências usadas no projeto.
 5. <https://chooser-beta.creativecommons.org/>
 6. <https://freesound.org/>
 7. <https://mixkit.co/>
-8. <http://www.mediafire.c>
+8. <http://www.mediafire.com/file/cl63d6ydeyp8ii5/HealthBarAssets.zip/file>
 
